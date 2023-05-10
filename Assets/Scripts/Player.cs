@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public EventManager Emanager;
-    //public SaveMemory SM;
     public TalkManager Tmanager;
 
     float h;
@@ -18,7 +17,6 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
 
-    //static bool gameStart = false;
     static bool metGhost = false;
     static bool houseEnter = false;    
 
@@ -27,7 +25,6 @@ public class Player : MonoBehaviour
         if (!SaveMemory.gameStart)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
-            //SM.gameStart = true;
         }
 
         rigid = GetComponent<Rigidbody2D>();
@@ -35,14 +32,7 @@ public class Player : MonoBehaviour
     }
     
     void Update()
-    {
-        // 캐릭터가 자동으로 걸어가는 애니메이션 테스트. 실패했다. 새로 애니메이션 변수를 만들던지 애니메이션을 만들던지 하자.
-        //if (SaveMemory.enterSchool1)
-        //{
-        //    h = 1;
-        //    animator.SetBool("isChange", true);
-        //    animator.SetInteger("DirX", (int)h);            
-        //}
+    {        
         if ((!SaveMemory.metGhost) && (transform.position.x >= -2))
         {
             Emanager.meetGhost();
@@ -52,7 +42,6 @@ public class Player : MonoBehaviour
             h = 0;
             v = 0;
             SaveMemory.metGhost = true;
-            //Debug.Log("2에 위치해 있다.");
         }
 
         if (SaveMemory.enterSchool2 && !SaveMemory.metTrouble && transform.position.x >= -4.2)
@@ -61,8 +50,7 @@ public class Player : MonoBehaviour
             animator.SetInteger("DirX", 0);
             animator.SetInteger("DirY", 0);
             h = 0;
-            v = 0;
-            //SaveMemory.metTrouble = true;
+            v = 0;           
         }
 
         if (!SaveMemory.talking && !SaveMemory.selecting && !SaveMemory.MiniGame)     // 스토리 진행중이 아닐때에만 캐릭터 이동 가능
@@ -100,7 +88,6 @@ public class Player : MonoBehaviour
             else if (tDirY == 1)
                 dirVec = Vector3.up;
 
-            //Scan Object
             if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
             {
                 Debug.Log("스캔 오브젝트는 눌렸다");
@@ -133,11 +120,7 @@ public class Player : MonoBehaviour
             {
                 SaveMemory.enterSchool2 = true;
                 SceneManager.LoadScene("School2");
-            }
-            else
-            {
-                // 지금은 갈 수 없어.
-            }
+            }            
         }
         else if (collision.collider.CompareTag("goTree"))
         {

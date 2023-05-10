@@ -12,8 +12,7 @@ public class CameraManager : MonoBehaviour
     {
         pPosition = player.transform.position;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         pPosition = player.transform.position;
@@ -46,8 +45,7 @@ public class CameraManager : MonoBehaviour
             transform.position = nowPosition;
         }
         else if (SaveMemory.enterHouse)
-        {
-            //Debug.Log("실행했다.");
+        {            
             nowPosition = pPosition;
             nowPosition.x = 0.1f;
             nowPosition.z = -10f;

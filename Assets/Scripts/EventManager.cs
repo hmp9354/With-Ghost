@@ -155,10 +155,10 @@ public class EventManager : MonoBehaviour
     // 이동해야 하는 좌표
     float y;
     float x;
-    float speed;            // 이동하는 스피드
+    float speed;                                    // 이동하는 스피드
     public void Action(GameObject scanObj)          // 스캔한 아이템의 이름을 출력
     {
-        // 만약 가짜문을 탐색했다면,
+            // 가짜 문을 탐색했다면,
         if (!SaveMemory.talking && !SaveMemory.showing)
         {
             if (scanObj.name == "fakeDoor")
@@ -168,7 +168,7 @@ public class EventManager : MonoBehaviour
                 SaveMemory.Id = 5;
                 Talk(5);
             }
-            // 만약 진짜문을 탐색했다면,
+            // 진짜 문을 탐색했다면,
             if (scanObj.name == "realDoor" || (scanObj.name == "Ghost"))
             {
                 SaveMemory.talking = true;
@@ -233,7 +233,6 @@ public class EventManager : MonoBehaviour
 
             if (scanObj.name == "coffee")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 1)
                 {
@@ -242,12 +241,10 @@ public class EventManager : MonoBehaviour
                     showImage();                    
                     if (SaveMemory.findKey == 1) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "memo")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 2)
                 {
@@ -256,12 +253,10 @@ public class EventManager : MonoBehaviour
                     showImage();                    
                     if (SaveMemory.findKey == 2) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "Piano")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 5)
                 {
@@ -277,12 +272,10 @@ public class EventManager : MonoBehaviour
                     showImage();                    
                     if (SaveMemory.findKey == 3) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "birdCage")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 4)
                 {
@@ -291,7 +284,6 @@ public class EventManager : MonoBehaviour
                     showImage();
                     if (SaveMemory.findKey == 4) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if(scanObj.name == "windowCracked")
@@ -370,7 +362,6 @@ public class EventManager : MonoBehaviour
             {
                 flowerSmile.SetActive(false);
                 SaveMemory.badEnding = true;
-                //SaveMemory.Id = 321;
             }
 
             if (scanObj.name == "hellDoor")                                      // 귀신이 빙의한 꽃을 줍는다
@@ -387,12 +378,11 @@ public class EventManager : MonoBehaviour
                 if (SaveMemory.halfHappy)
                 {
                     SaveMemory.Id = 3500;
-                    //SceneManager.LoadScene("HalfHappy");
                 }
                 Talk(SaveMemory.Id);
             }
 
-            if (scanObj.name == "reaper")                                      // 엔딩 여부 정해지고 저승사자에게 말걸기.
+            if (scanObj.name == "reaper")                                      // 엔딩 분기, 저승사자에게 말걸기.
             {
                 if (SaveMemory.trueEnding)
                 {
@@ -410,8 +400,6 @@ public class EventManager : MonoBehaviour
             {
                 Debug.Log(scanObj.name);
             }
-            //scanObject = scanObj;
-            //talkText.text = "테스트";
         }
     }
 
@@ -422,7 +410,7 @@ public class EventManager : MonoBehaviour
         string talkData = Tmanager.GetTalk(id, SaveMemory.talkIndex);
         Sprite ImageData = GetTalk(id, SaveMemory.talkIndex);
 
-        // 플레이어 위치에 따라 대화창이 위에 뜰지, 아래에 뜰지 결정된다.
+        // 플레이어 위치에 따라 대화창이 위에 위치할 지, 아래에 위치할 지 결정된다.
         if (player.transform.position.y > -1.6)
         {
             talkUI = talkUIUP;
@@ -578,7 +566,7 @@ public class EventManager : MonoBehaviour
                 Talk(SaveMemory.Id);                
                 moveGhostLeft = true;
             }
-            // 우선 미니게임씬 안만들었으니까 바로 넘어가는거로 하자.
+            // 우선 미니게임씬 생략
             else if (SaveMemory.Id == 23)
             {
                 SaveMemory.Id = 26;
@@ -593,13 +581,11 @@ public class EventManager : MonoBehaviour
                 SaveMemory.talkIndex = 0;
                 SaveMemory.talking = true;
                 Talk(SaveMemory.Id);
-                //SaveMemory.talkIndex++;
             }
             else if (SaveMemory.Id == 26)
             {
                 SaveMemory.selecting = true;
                 select.SetActive(true);
-                // 3층에 올라갈까? 올라간다. 올라가지 않는다.
             }            
             else if (SaveMemory.Id == 29)                           // 3층 귀신과 함께 3층에 올라옴
             {
@@ -683,7 +669,6 @@ public class EventManager : MonoBehaviour
                 y = 0f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SaveMemory.Id = 350;
             }
             else if (SaveMemory.Id == 3401 || SaveMemory.Id == 341)
             {
@@ -692,7 +677,6 @@ public class EventManager : MonoBehaviour
                 y = 0f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SaveMemory.Id = 351;
             }
 
             else if (SaveMemory.Id == 350)                           
@@ -703,7 +687,6 @@ public class EventManager : MonoBehaviour
                 y = 1.16f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SceneManager.LoadScene("HalfHappy");
             }
             else if (SaveMemory.Id == 3500)
             {
@@ -738,18 +721,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 38)
             {
-                Black.SetActive(true);                
-                //if (SaveMemory.findBook)
-                //{
-                //    past.sprite = album1;
-                //}
-                //else
-                //{
-                //    past.sprite = picture;
-                //}
-                //past.sprite = picture;
-                //SaveMemory.Id = 311;
-                //showImage();
+                Black.SetActive(true);                            
             }
             return;
         }
@@ -820,8 +792,7 @@ public class EventManager : MonoBehaviour
         anim = Ghost.GetComponent<Animator>();
         Ghost.transform.position = new Vector3(0, player.transform.position.y, 0);
         Ghost.SetActive(true);
-        SaveMemory.talking = true;
-        //Debug.Log("귀신 만났을때 talkIndex" + SaveMemory.talkIndex);
+        SaveMemory.talking = true;        
         Talk(SaveMemory.Id);
         SaveMemory.talkIndex++;
     }
@@ -891,16 +862,14 @@ public class EventManager : MonoBehaviour
             SaveMemory.Id = 16;
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
-            SaveMemory.talkIndex = 1;
-            //SaveMemory.enterHouse = false;
+            SaveMemory.talkIndex = 1;            
         }
         else if (SaveMemory.enterHouse)
         {
             SaveMemory.Id = 7;
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
-            SaveMemory.talkIndex = 1;
-            //SaveMemory.enterHouse = false;
+            SaveMemory.talkIndex = 1;            
         }
         else if (!SaveMemory.gameStart)
         {
@@ -908,20 +877,14 @@ public class EventManager : MonoBehaviour
             SaveMemory.Id = 1;
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
-            SaveMemory.talkIndex = 1;
-            //SM.gameStart = true;
+            SaveMemory.talkIndex = 1;            
         }
                 
         if (SaveMemory.roomDoor == 3 && !SaveMemory.enterSchool1)
         {
             GameObject.Find("roomDoor").SetActive(false);
         }
-    }
-
-    //void Start()
-    //{
-
-    //}
+    }  
     
     void Update()
     {
@@ -962,8 +925,7 @@ public class EventManager : MonoBehaviour
             }
         }
         if (moveGhostDown)
-        {
-            //SaveMemory.showing = true;
+        {            
             moveObject.transform.Translate(0, -speed, 0);
             if (moveObject2 != null)
             {
@@ -988,8 +950,7 @@ public class EventManager : MonoBehaviour
                     SaveMemory.talkIndex++;
                 }
                 moveGhostDown = false;
-            }            
-            //SaveMemory.showing = false;
+            }                        
         }
         if (moveGhostRight)
         {
@@ -1056,8 +1017,7 @@ public class EventManager : MonoBehaviour
             moveObject2 = GhostGlasses;
 
             moveGhostDown = true;
-            SaveMemory.metTrouble = true;
-            //SaveMemory.showing = true;
+            SaveMemory.metTrouble = true;            
         }
 
 
@@ -1073,8 +1033,7 @@ public class EventManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             if (ImageControll)
-            {
-                Debug.Log("여기도 도달했습니다.");
+            {                
                 ImageControll = false;
                 SaveMemory.showing = false;
                 Color tmp = past.color;
@@ -1144,8 +1103,7 @@ public class EventManager : MonoBehaviour
                     else
                     {
                         SaveMemory.Id = 27;
-                        SaveMemory.dontGo3 = true;
-                        //SaveMemory.badEnding = true;
+                        SaveMemory.dontGo3 = true;                        
                     }                    
                 }
                 select.SetActive(false);
@@ -1153,8 +1111,7 @@ public class EventManager : MonoBehaviour
                 SaveMemory.talkIndex++;
             }
             else if (black)
-            {
-                Debug.Log("블랙까지 도달");
+            {                
                 Ending.SetActive(true);
                 if (SaveMemory.trueEnding)
                 {
@@ -1174,8 +1131,7 @@ public class EventManager : MonoBehaviour
         if (SaveMemory.showing)
         {
             if (Input.GetKeyDown(KeyCode.Z))
-            {
-                //Debug.Log("우선여기에 도달했습니다.");
+            {                
                 ImageControll = true;
             }
 
@@ -1727,8 +1683,7 @@ public class EventManager : MonoBehaviour
     }
 
     Sprite GetTalk(int id, int talkIndex)
-    {
-        //Debug.Log("TI까지는 왔다");
+    {        
         if (talkIndex == ImageData[id].Length)
             return null;
         else

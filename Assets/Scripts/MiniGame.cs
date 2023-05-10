@@ -94,7 +94,7 @@ public class MiniGame : MonoBehaviour
                 GhostColor = 2;
                 break;
             }
-            else { Debug.Log("무언가 잘못됐다."); break; }
+            else { Debug.Log("오류."); break; }
         }
 
 
