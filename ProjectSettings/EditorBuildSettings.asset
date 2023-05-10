@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Border.unity
+    guid: 7c360895b3bcdce48be21e172c9efa4e
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: 63ab8ccbf69ad18428ca9121d5f73b6b
+  - enabled: 1
+    path: Assets/Scenes/School1.unity
+    guid: a0b984f55f4696a4593b70c51102a4a7
+  - enabled: 1
+    path: Assets/Scenes/School2.unity
+    guid: a4bb3f183f835994b8fda5342ba08fb1
+  - enabled: 1
+    path: Assets/Scenes/School3.unity
+    guid: d4d611e81997d0143b61f507f30c2c43
+  - enabled: 1
+    path: Assets/Scenes/SchoolRoop.unity
+    guid: 2224b8cba7111874c84a3b7470c78c7d
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: d4d1a117c20cafd47800f9aed35a844f
+  - enabled: 1
+    path: Assets/Scenes/HalfHappy.unity
+    guid: 5271739dc09c0cb4bb4a52d817f028ba
+  - enabled: 1
+    path: Assets/Scenes/TrueEnding.unity
+    guid: dad589501c223f44b968e9c8b6063c43
+  m_configObjects: {}
