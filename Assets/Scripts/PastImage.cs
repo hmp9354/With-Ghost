@@ -6,12 +6,7 @@ using UnityEngine.UI;
 public class PastImage : MonoBehaviour
 {
     public Sprite roomDoor;
-    Sprite[] pastImage;    
-    
-    private void Awake()
-    {
-        pastImage[0] = roomDoor;
-    }
+    Sprite[] pastImage;            
 
     public Sprite getPastImage(int index)
     {

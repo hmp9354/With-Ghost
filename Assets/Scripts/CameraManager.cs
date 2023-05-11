@@ -15,12 +15,9 @@ public class CameraManager : MonoBehaviour
     
     void Update()
     {
+        /* 카메라 위치는 플레이어를 따라감 */
         pPosition = player.transform.position;
-        if (SaveMemory.schoolRoop)
-        {
-
-        }
-        else if (SaveMemory.enterSchool1 || SaveMemory.enterSchool2)
+        if (SaveMemory.enterSchool1 || SaveMemory.enterSchool2)
         {
             nowPosition = pPosition;            
             nowPosition.z = -10f;

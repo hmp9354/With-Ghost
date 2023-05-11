@@ -634,7 +634,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 323)                           // 귀신이 문에 들어가지 못 함.
             {
-                Black.SetActive(true);                
+                Black.SetActive(true);
             }
             else if(SaveMemory.Id == 33)                            // 저승사자 이동 후 귀신이 말검 아직 구현 안함.
             {
@@ -721,7 +721,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 38)
             {
-                Black.SetActive(true);                            
+                Black.SetActive(true);
             }
             return;
         }
@@ -1148,7 +1148,7 @@ public class EventManager : MonoBehaviour
             }
         }
 
-        if(Black.activeSelf == true)
+        if (Black.activeSelf == true)
         {
             black = true;
         }

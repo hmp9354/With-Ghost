@@ -6,6 +6,7 @@ public class TalkManager : MonoBehaviour
 {
     Dictionary<int, string[]> talkData;
 
+    /* 대사 다이얼로그 Dictionary 저장 */
     void Awake()
     {
         talkData = new Dictionary<int, string[]>();
@@ -305,8 +306,8 @@ public class TalkManager : MonoBehaviour
             "너네가 3층 교실에 들르면,\n나도 같이 올라갔다 올까 해서."
         });
 
-        // 선택 후
-        // 배드엔딩 루트
+        /* 선택 후 */
+        /* 배드엔딩 선택 : 3층을 들르지 않음 */
         talkData.Add(27, new string[]
         {
             "굳이 3층을 들러야 할 필요는 없지?",
@@ -321,7 +322,7 @@ public class TalkManager : MonoBehaviour
             "안녕!"
         });
 
-        // 3층에 들른다.
+        /* 진엔딩 및 노말 엔딩 선택 : 3층에 들름 */
         talkData.Add(28, new string[]
         {
             "3층도 돌아보고 싶어.",
@@ -373,7 +374,7 @@ public class TalkManager : MonoBehaviour
             "옥상 가는 길은 이쪽이야!"
         });
 
-        // 배드엔딩
+        /* 배드엔딩 */
         talkData.Add(32, new string[]
         {
             "저게 내가 말한 문이야!",
@@ -403,6 +404,7 @@ public class TalkManager : MonoBehaviour
             "어?" ,
             "귀신아..?"
         });
+
 
         // 저승사자와 만나다.
         talkData.Add(33, new string[]
@@ -461,6 +463,7 @@ public class TalkManager : MonoBehaviour
             "경계가 어떻게 될지 모르겠지만...\n저승문으로 가면 진짜로 너가 죽는거잖아."
         });
 
+        /* 노말엔딩 선택 */
         talkData.Add(3400, new string[]
         {
             "그래도 난 너랑 같이 갈래.",
@@ -469,6 +472,7 @@ public class TalkManager : MonoBehaviour
             "정 그렇다면 알았어...",        
         });
 
+        /* 진엔딩 선택 */
         talkData.Add(3401, new string[]
         {
             "...알았어. 여기 남아있을게.",
@@ -504,6 +508,7 @@ public class TalkManager : MonoBehaviour
             "응. 너도 조심히 가."
         });
 
+        /* 노말 엔딩 */
         talkData.Add(352, new string[]
         {
             "...",
@@ -516,6 +521,7 @@ public class TalkManager : MonoBehaviour
             "응! 졸업하자마자 죽었거든."
         });
 
+        /* 진엔딩 */
         talkData.Add(36, new string[]
         {
             "진짜 여기에 갇힌 건가?",
@@ -544,6 +550,7 @@ public class TalkManager : MonoBehaviour
         });
     }
 
+    /* 다이얼로그 ID에 맞춰 스토리 진행 */
     public string GetTalk(int id, int talkIndex)
     {
         if (talkIndex == talkData[id].Length)
