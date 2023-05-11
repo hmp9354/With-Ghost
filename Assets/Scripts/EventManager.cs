@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
+    /* 캐릭터 표정 Sprite */
     public Sprite player1;
     public Sprite player2;
     public Sprite player3;
@@ -23,9 +24,6 @@ public class EventManager : MonoBehaviour
     public Sprite player15;
     public Sprite player16;
 
-
-
-
     public Sprite ghost1;
     public Sprite ghost2;
     public Sprite ghost3;
@@ -42,7 +40,6 @@ public class EventManager : MonoBehaviour
     public Sprite ghost14;
     public Sprite ghost15;
 
-
     public Sprite ribbon1;
     public Sprite ribbon2;
     public Sprite ribbon3;
@@ -58,10 +55,6 @@ public class EventManager : MonoBehaviour
     public Sprite cap7;
     public Sprite cap8;
 
-
-
-
-
     public Sprite glass1;
     public Sprite glass2;
     public Sprite glass3;
@@ -74,6 +67,9 @@ public class EventManager : MonoBehaviour
     public Sprite Reaper2;
 
 
+    /* 아이템 조사 Sprite */
+    public GameObject scanObject;
+    public Image past;         // 빙의 그림    
 
     public Sprite roomDoor;
     public Sprite coffee;
@@ -92,38 +88,7 @@ public class EventManager : MonoBehaviour
     public Sprite album3;
 
 
-    /* 대화이미지를 오류로 인해 여기에 저장한다. */
-    Dictionary<int, Sprite[]> ImageData;
-
-    public TalkManager Tmanager;
-    public SaveMemory SM;
-
-    public GameObject Black;    // 암흑
-    public GameObject Ending;
-
-    Text talkText;             // 대화창의 텍스트
-    public Text talkTextUp;
-    public Text talkTextDown;
-
-    GameObject talkUI;         // 대화창
-    public GameObject talkUIUP;
-    public GameObject talkUIDown;
-
-    Image talkImage;           // 캐릭터 표정
-    public Image talkImageUp;
-    public Image talkImageDown;
-
-    public GameObject select;       // 선택창
-    public GameObject selectBox1;
-    public GameObject selectBox2;
-    public GameObject selectText1;
-    public GameObject selectText2;
-    bool selected = false;
-
-    public Image past;         // 빙의 그림
-
-    public GameObject scanObject;
-
+    /* NPC */
     public GameObject player;
     public GameObject Ghost;
     public GameObject GhostRibbon;
@@ -137,28 +102,63 @@ public class EventManager : MonoBehaviour
     public GameObject flowerSad;
 
 
+    /* 캐릭터 이동 관련 변수*/
     GameObject moveObject;
     GameObject moveObject2;
-
-    Animator anim;
-
-    bool sawPiano = false;
-    bool ribbon = false;
-    bool ImageControll = false;
-    bool black = false;
 
     bool moveGhostUp = false;
     bool moveGhostDown = false;
     bool moveGhostRight = false;
     bool moveGhostLeft = false;
 
-    // 이동해야 하는 좌표
+    // 이동해야 하는 좌표 및 이동 속도
     float y;
     float x;
-    float speed;            // 이동하는 스피드
-    public void Action(GameObject scanObj)          // 스캔한 아이템의 이름을 출력
+    float speed;
+
+
+    /* 대화창 */
+    Dictionary<int, Sprite[]> ImageData;
+
+    public TalkManager Tmanager;
+
+    GameObject talkUI;
+    public GameObject talkUIUP;
+    public GameObject talkUIDown;
+
+    Text talkText;
+    public Text talkTextUp;
+    public Text talkTextDown;
+
+    Image talkImage;
+    public Image talkImageUp;
+    public Image talkImageDown;
+
+    // 선택창
+    public GameObject select;
+    public GameObject selectBox1;
+    public GameObject selectBox2;
+    public GameObject selectText1;
+    public GameObject selectText2;
+    bool selected = false;
+
+
+    /* 이벤트 분기 */
+    bool sawPiano = false;
+    bool ribbon = false;
+    bool ImageControll = false;
+    bool black = false;
+
+
+    /* 엔딩 관련 변수 */
+    public SaveMemory SM;
+    public GameObject Black;
+    public GameObject Ending;
+
+
+    /* scanObj에 따른 대사 및 행동*/
+    public void Action(GameObject scanObj)
     {
-        // 만약 가짜문을 탐색했다면,
         if (!SaveMemory.talking && !SaveMemory.showing)
         {
             if (scanObj.name == "fakeDoor")
@@ -168,7 +168,7 @@ public class EventManager : MonoBehaviour
                 SaveMemory.Id = 5;
                 Talk(5);
             }
-            // 만약 진짜문을 탐색했다면,
+
             if (scanObj.name == "realDoor" || (scanObj.name == "Ghost"))
             {
                 SaveMemory.talking = true;
@@ -177,7 +177,6 @@ public class EventManager : MonoBehaviour
                 Talk(6);
             }
 
-            // 방문을 탐색했다면,
             if (scanObj.name == "roomDoor")
             {
                 SaveMemory.talking = true;
@@ -197,11 +196,10 @@ public class EventManager : MonoBehaviour
                     GameObject.Find("roomDoor").SetActive(false);
                     SaveMemory.Id = 13;
                 }
-
                 Talk(SaveMemory.Id);
             }
 
-            if (scanObj.name == "pen" && SaveMemory.roomDoor == 1)           // 볼펜을 탐색했을 때
+            if (scanObj.name == "pen" && SaveMemory.roomDoor == 1)
             {
                 SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
@@ -220,7 +218,7 @@ public class EventManager : MonoBehaviour
                     SaveMemory.Id = 14;
                     SaveMemory.findKey++;
                 }
-                else if(SaveMemory.findKey >= 6)
+                else if (SaveMemory.findKey >= 6)
                 {
                     SaveMemory.Id = 15;
                 }
@@ -233,35 +231,30 @@ public class EventManager : MonoBehaviour
 
             if (scanObj.name == "coffee")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 1)
                 {
                     SaveMemory.Id = 140;
                     past.sprite = coffee;
-                    showImage();                    
+                    showImage();
                     if (SaveMemory.findKey == 1) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "memo")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 2)
                 {
                     SaveMemory.Id = 141;
                     past.sprite = memo;
-                    showImage();                    
+                    showImage();
                     if (SaveMemory.findKey == 2) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "Piano")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 5)
                 {
@@ -274,15 +267,13 @@ public class EventManager : MonoBehaviour
                 {
                     SaveMemory.Id = 142;
                     past.sprite = piano1;
-                    showImage();                    
+                    showImage();
                     if (SaveMemory.findKey == 3) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
             if (scanObj.name == "birdCage")
             {
-                //SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 if (SaveMemory.findKey >= 4)
                 {
@@ -291,21 +282,20 @@ public class EventManager : MonoBehaviour
                     showImage();
                     if (SaveMemory.findKey == 4) { SaveMemory.findKey++; }
                 }
-                //Talk(SaveMemory.Id);
             }
 
-            if(scanObj.name == "windowCracked")
+            if (scanObj.name == "windowCracked")
             {
                 SaveMemory.talkIndex = 0;
 
                 if (!SaveMemory.lookWindow)
-                {                    
-                    SaveMemory.Id = 18;                                                         
-                    SaveMemory.lookWindow = true;
-                }           
-                else if(!SaveMemory.findEraserUp)
                 {
-                    SaveMemory.Id = 181;                                        
+                    SaveMemory.Id = 18;
+                    SaveMemory.lookWindow = true;
+                }
+                else if (!SaveMemory.findEraserUp)
+                {
+                    SaveMemory.Id = 181;
                     SaveMemory.findEraser++;
                     SaveMemory.findEraserUp = true;
                 }
@@ -318,10 +308,10 @@ public class EventManager : MonoBehaviour
 
                 if (!SaveMemory.findEraserDown)
                 {
-                    SaveMemory.Id = 19;                    
+                    SaveMemory.Id = 19;
                     Talk(SaveMemory.Id);
                     SaveMemory.findEraserDown = true;
-                }               
+                }
             }
 
             if (scanObj.name == "GhostRibbon")
@@ -344,7 +334,7 @@ public class EventManager : MonoBehaviour
                 Talk(SaveMemory.Id);
             }
 
-            if(scanObj.name == "missingBook")                                       // 책갈피 발견
+            if (scanObj.name == "missingBook")                                       // 책갈피 발견
             {
                 if (!SaveMemory.findBook)
                 {
@@ -352,10 +342,10 @@ public class EventManager : MonoBehaviour
                     SaveMemory.Id = 30;
                     SaveMemory.findBook = true;
                     Talk(SaveMemory.Id);
-                }               
+                }
             }
 
-            if (scanObj.name == "missingMemory")                                       // 단체사진 조사
+            if (scanObj.name == "missingMemory")                                   // 단체사진 조사
             {
                 if (!SaveMemory.findPicture)
                 {
@@ -366,14 +356,13 @@ public class EventManager : MonoBehaviour
                 }
             }
 
-            if (scanObj.name == "flowerSmile")                                      // 귀신이 빙의한 꽃을 줍는다
+            if (scanObj.name == "flowerSmile")
             {
                 flowerSmile.SetActive(false);
                 SaveMemory.badEnding = true;
-                //SaveMemory.Id = 321;
             }
 
-            if (scanObj.name == "hellDoor")                                      // 귀신이 빙의한 꽃을 줍는다
+            if (scanObj.name == "hellDoor")
             {
                 SaveMemory.talkIndex = 0;
                 SaveMemory.talking = true;
@@ -381,18 +370,17 @@ public class EventManager : MonoBehaviour
                 {
                     player.SetActive(false);
                     flowerSad.SetActive(true);
-                    
-                    SaveMemory.Id = 321;                    
-                }                
+
+                    SaveMemory.Id = 321;
+                }
                 if (SaveMemory.halfHappy)
                 {
                     SaveMemory.Id = 3500;
-                    //SceneManager.LoadScene("HalfHappy");
                 }
                 Talk(SaveMemory.Id);
             }
 
-            if (scanObj.name == "reaper")                                      // 엔딩 여부 정해지고 저승사자에게 말걸기.
+            if (scanObj.name == "reaper")
             {
                 if (SaveMemory.trueEnding)
                 {
@@ -402,27 +390,19 @@ public class EventManager : MonoBehaviour
                 {
                     SaveMemory.Id = 350;
                 }
-                SaveMemory.talking = true;                                
+                SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 Talk(SaveMemory.Id);
             }
-            else
-            {
-                Debug.Log(scanObj.name);
-            }
-            //scanObject = scanObj;
-            //talkText.text = "테스트";
         }
     }
-
-    /* id 1~6 : 경계 */
 
     void Talk(int id)
     {
         string talkData = Tmanager.GetTalk(id, SaveMemory.talkIndex);
         Sprite ImageData = GetTalk(id, SaveMemory.talkIndex);
 
-        // 플레이어 위치에 따라 대화창이 위에 뜰지, 아래에 뜰지 결정된다.
+        /* 플레이어 위치에 따라 대화창의 위치 결정 */
         if (player.transform.position.y > -1.6)
         {
             talkUI = talkUIUP;
@@ -438,6 +418,8 @@ public class EventManager : MonoBehaviour
 
         talkUI.SetActive(true);
 
+
+        /* 대화 종료 후 이벤트 발생 */
         if (talkData == null)
         {
             SaveMemory.talking = false;
@@ -460,7 +442,7 @@ public class EventManager : MonoBehaviour
                 Talk(3);
                 SaveMemory.Id++;
             }
-            else if(id == 3)                     // 귀신이 바위에서 나옴
+            else if (id == 3)                     // 귀신이 바위에서 나옴
             {
                 Ghost.SetActive(true);
                 GhostFace.SetActive(false);
@@ -473,10 +455,7 @@ public class EventManager : MonoBehaviour
             {
                 Ghost.transform.position = new Vector3(2, 1, 0);
             }
-            else if (id == 5)
-            {
-                // 게임오버
-            }
+
             // 집 입장
             else if (id == 6)
             {
@@ -492,7 +471,7 @@ public class EventManager : MonoBehaviour
             {
                 speed = 0.02f;
                 y = 0.8f;
-                moveObject = Ghost;                
+                moveObject = Ghost;
                 moveGhostUp = true;
             }
             else if (id == 8)                // 주인공이 문을 열지 못해서 귀신이 문 여는 것을 시도함.
@@ -507,15 +486,15 @@ public class EventManager : MonoBehaviour
             else if (id == 9)                // 귀신이 문고리에 빙의
             {
                 SaveMemory.Id = 10;
-                past.sprite = roomDoor;                
-                showImage();                
+                past.sprite = roomDoor;
+                showImage();
             }
             else if (id == 15)
             {
                 SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
                 SaveMemory.enterSchool1 = true;
-                SceneManager.LoadScene("School1");                
+                SceneManager.LoadScene("School1");
             }
             else if (SaveMemory.Id == 16)
             {
@@ -532,17 +511,17 @@ public class EventManager : MonoBehaviour
                 moveGhostDown = true;
                 moveGhostRight = true;
                 x = 4f;
-                y = -3f;                
+                y = -3f;
             }
             else if (SaveMemory.Id == 18)
             {
-                SaveMemory.Id = 180;                
+                SaveMemory.Id = 180;
                 past.sprite = eraserShooting;     // 지우개가 튕겨나가는 모습
                 showImage();
             }
             else if (SaveMemory.Id == 181)
             {
-                SaveMemory.Id = 182;                
+                SaveMemory.Id = 182;
                 past.sprite = eraserUp;     // 햄버거 모양 지우개 모습
                 showImage();
             }
@@ -552,7 +531,7 @@ public class EventManager : MonoBehaviour
                 if (!SaveMemory.findEraserDown)
                 {
                     SaveMemory.Id++;
-                    SaveMemory.talkIndex = 0;                    
+                    SaveMemory.talkIndex = 0;
                 }
                 else
                 {
@@ -565,20 +544,21 @@ public class EventManager : MonoBehaviour
             else if (SaveMemory.Id == 19)
             {
                 past.sprite = eraserDown;     // 햄버거 모양 지우개 밑에 모습
-                SaveMemory.Id = 190;                
+                SaveMemory.Id = 190;
                 showImage();
             }
-            else if(SaveMemory.Id == 190 && SaveMemory.findEraserUp)
+            else if (SaveMemory.Id == 190 && SaveMemory.findEraserUp)
             {
                 speed = 0.02f;
                 x = 0.05f;
                 SaveMemory.talking = true;
                 SaveMemory.Id = 191;
                 SaveMemory.talkIndex = 0;
-                Talk(SaveMemory.Id);                
+                Talk(SaveMemory.Id);
                 moveGhostLeft = true;
             }
-            // 우선 미니게임씬 안만들었으니까 바로 넘어가는거로 하자.
+
+            // 미니게임씬 생략
             else if (SaveMemory.Id == 23)
             {
                 SaveMemory.Id = 26;
@@ -593,29 +573,25 @@ public class EventManager : MonoBehaviour
                 SaveMemory.talkIndex = 0;
                 SaveMemory.talking = true;
                 Talk(SaveMemory.Id);
-                //SaveMemory.talkIndex++;
             }
             else if (SaveMemory.Id == 26)
             {
                 SaveMemory.selecting = true;
                 select.SetActive(true);
-                // 3층에 올라갈까? 올라간다. 올라가지 않는다.
-            }            
+            }
             else if (SaveMemory.Id == 29)                           // 3층 귀신과 함께 3층에 올라옴
             {
                 moveObject = GhostGlasses;
                 speed = 0.02f;
-                x = -7f;                               
+                x = -7f;
                 moveGhostLeft = true;
             }
-
             else if (SaveMemory.Id == 31)                           // 6학년 단체 사진을 바견
             {
-                past.sprite = picture;     
+                past.sprite = picture;
                 SaveMemory.Id = 311;
                 showImage();
             }
-
             else if (SaveMemory.Id == 311)                           // 6학년 단체 사진을 바견
             {
                 moveObject = Ghost;
@@ -625,7 +601,6 @@ public class EventManager : MonoBehaviour
                 moveGhostLeft = true;
                 moveGhostDown = true;
             }
-
             else if (SaveMemory.Id == 32)                           // 귀신이 꽃에 빙의
             {
                 moveObject = Ghost;
@@ -633,7 +608,7 @@ public class EventManager : MonoBehaviour
                 x = -2.11f;
                 y = 0.06f;
                 moveGhostUp = true;
-                moveGhostRight = true;                
+                moveGhostRight = true;
             }
             else if (SaveMemory.Id == 321)                           // 귀신이 문에 들어가지 못 함.
             {
@@ -648,9 +623,9 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 323)                           // 귀신이 문에 들어가지 못 함.
             {
-                Black.SetActive(true);                
+                Black.SetActive(true);
             }
-            else if(SaveMemory.Id == 33)                            // 저승사자 이동 후 귀신이 말검 아직 구현 안함.
+            else if (SaveMemory.Id == 33)                            // 저승사자 이동 후 귀신이 말검 아직 구현 안함.
             {
                 SaveMemory.Id = 34;
                 SaveMemory.talkIndex = 0;
@@ -658,6 +633,7 @@ public class EventManager : MonoBehaviour
                 Talk(SaveMemory.Id);
             }
 
+            /* 노멀엔딩 진엔딩 선택 분기 */
             else if (SaveMemory.Id == 34)
             {
                 SaveMemory.selecting = true;
@@ -675,15 +651,14 @@ public class EventManager : MonoBehaviour
                 selectText1.GetComponent<Text>().text = "1. 그래도 너랑 같이 갈래";
                 selectText2.GetComponent<Text>().text = "2. 알았어, 여기에 남아있을게.";
             }
-            
-            else if(SaveMemory.Id == 3400)
+
+            else if (SaveMemory.Id == 3400)
             {
                 moveObject = Ghost;
                 x = -0.7f;
                 y = 0f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SaveMemory.Id = 350;
             }
             else if (SaveMemory.Id == 3401 || SaveMemory.Id == 341)
             {
@@ -692,10 +667,9 @@ public class EventManager : MonoBehaviour
                 y = 0f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SaveMemory.Id = 351;
             }
 
-            else if (SaveMemory.Id == 350)                           
+            else if (SaveMemory.Id == 350)
             {
                 moveObject = Ghost;
                 moveObject2 = Reaper;
@@ -703,33 +677,32 @@ public class EventManager : MonoBehaviour
                 y = 1.16f;
                 moveGhostRight = true;
                 moveGhostUp = true;
-                //SceneManager.LoadScene("HalfHappy");
             }
             else if (SaveMemory.Id == 3500)
             {
-               SceneManager.LoadScene("HalfHappy");
+                SceneManager.LoadScene("HalfHappy");
             }
 
-            else if (SaveMemory.Id == 351)                           
+            else if (SaveMemory.Id == 351)
             {
                 moveObject = Ghost;
                 moveObject2 = Reaper;
                 x = 0;
                 y = 1.16f;
                 moveGhostRight = true;
-                moveGhostUp = true;             
+                moveGhostUp = true;
             }
             else if (SaveMemory.Id == 352)
             {
                 Black.SetActive(true);
             }
 
-            else if(SaveMemory.Id == 36)
+            else if (SaveMemory.Id == 36)
             {
                 SaveMemory.Id = 37;
                 SceneManager.LoadScene("TrueEnding");
             }
-            else if(SaveMemory.Id == 37)
+            else if (SaveMemory.Id == 37)
             {
                 SaveMemory.Id = 38;
                 SaveMemory.talkIndex = 0;
@@ -738,18 +711,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 38)
             {
-                Black.SetActive(true);                
-                //if (SaveMemory.findBook)
-                //{
-                //    past.sprite = album1;
-                //}
-                //else
-                //{
-                //    past.sprite = picture;
-                //}
-                //past.sprite = picture;
-                //SaveMemory.Id = 311;
-                //showImage();
+                Black.SetActive(true);
             }
             return;
         }
@@ -765,46 +727,12 @@ public class EventManager : MonoBehaviour
         tmp.a = 1;
         past.color = tmp;
         SaveMemory.showing = true;
-        //SaveMemory.talking = false;      // 여기 바꿔봄
-
-        //Debug.Log("쇼우 이미지까지느 ㄴ왔다.");
-        //SaveMemory.showing = true;
-        //Color color = past.color;        //오브젝트 이미지의 컬러를 새로 선언한 컬러로 참조
-
-        ////알파값을 내려주기 위해 1에서 0으로 for문 반복
-        //for (float i = 0f; i <= 1.0f; i += 0.01f)
-        //{
-        //    color.a = i;                   //i가 내려가면서 선언한 컬러의 알파 값에 참조
-        //    past.color = color;       //i로 인해 내려간 알파 값을 다시 오브젝트 이미지에 참조
-        //}
-        //Debug.Log(past.color.a);
     }
 
-    void disImage()
-    {
-        Color color = past.color;        //오브젝트 이미지의 컬러를 새로 선언한 컬러로 참조
-
-        //알파값을 내려주기 위해 1에서 0으로 for문 반복
-        for (float i = 1.0f; i >= 0.0f; i -= 0.01f)
-        {
-            color.a = i;                   //i가 내려가면서 선언한 컬러의 알파 값에 참조
-            past.color = color;       //i로 인해 내려간 알파 값을 다시 오브젝트 이미지에 참조
-        }
-        SaveMemory.showing = false;
-        if (SaveMemory.Id == 9)
-        {
-            SaveMemory.Id = 10;
-            SaveMemory.talkIndex = 0;
-            SaveMemory.talking = true;
-            Talk(SaveMemory.Id);
-            SaveMemory.talkIndex++;
-        }        
-
-    }
-
+    /* 선택창 현재 선택지 표시 */
     void Choice()
-    {        
-        if(selectBox1.activeSelf == true)
+    {
+        if (selectBox1.activeSelf == true)
         {
             selectBox1.SetActive(false);
             selectBox2.SetActive(true);
@@ -815,19 +743,20 @@ public class EventManager : MonoBehaviour
             selectBox2.SetActive(false);
         }
     }
+
+    /* 귀신 만나는 이벤트 */
     public void meetGhost()
     {
-        anim = Ghost.GetComponent<Animator>();
         Ghost.transform.position = new Vector3(0, player.transform.position.y, 0);
         Ghost.SetActive(true);
         SaveMemory.talking = true;
-        //Debug.Log("귀신 만났을때 talkIndex" + SaveMemory.talkIndex);
         Talk(SaveMemory.Id);
         SaveMemory.talkIndex++;
     }
 
     void Awake()
     {
+        /* 이벤트 분기에 따라 스토리 진행 */
         ImageData = new Dictionary<int, Sprite[]>();
         GenerateData();
         if (SaveMemory.trueEnding)
@@ -853,7 +782,7 @@ public class EventManager : MonoBehaviour
         }
 
         else if (SaveMemory.schoolRoop)
-        {   //임시로 배드엔딩 만드는 중
+        {
             //SaveMemory.Id = 32;     // 나중에 바꿔야 하는 값
             if (SaveMemory.findPicture)
             {
@@ -870,7 +799,7 @@ public class EventManager : MonoBehaviour
                 SaveMemory.talkIndex = 0;
                 Talk(SaveMemory.Id);
                 SaveMemory.talkIndex = 1;
-            }            
+            }
         }
         else if (SaveMemory.enterSchool3)
         {
@@ -892,7 +821,6 @@ public class EventManager : MonoBehaviour
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
             SaveMemory.talkIndex = 1;
-            //SaveMemory.enterHouse = false;
         }
         else if (SaveMemory.enterHouse)
         {
@@ -900,7 +828,6 @@ public class EventManager : MonoBehaviour
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
             SaveMemory.talkIndex = 1;
-            //SaveMemory.enterHouse = false;
         }
         else if (!SaveMemory.gameStart)
         {
@@ -909,20 +836,14 @@ public class EventManager : MonoBehaviour
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
             SaveMemory.talkIndex = 1;
-            //SM.gameStart = true;
         }
-                
+
         if (SaveMemory.roomDoor == 3 && !SaveMemory.enterSchool1)
         {
             GameObject.Find("roomDoor").SetActive(false);
         }
     }
 
-    //void Start()
-    //{
-
-    //}
-    
     void Update()
     {
         if (SaveMemory.MiniGameEnd)
@@ -934,22 +855,23 @@ public class EventManager : MonoBehaviour
             SaveMemory.talkIndex++;
         }
 
+        /* NPC이동 */
         if (moveGhostUp)
         {
             moveObject.transform.Translate(0, speed, 0);
-            if(moveObject2 != null)
+            if (moveObject2 != null)
             {
                 moveObject2.transform.Translate(0, speed, 0);
             }
 
             if (moveObject.transform.position.y >= y)
             {
-                if(SaveMemory.Id == 350 || SaveMemory.Id == 351)
+                if (SaveMemory.Id == 350 || SaveMemory.Id == 351)
                 {
                     Ghost.SetActive(false);
                     Reaper.SetActive(false);
 
-                    if(SaveMemory.Id == 351)
+                    if (SaveMemory.Id == 351)
                     {
                         SaveMemory.talkIndex = 0;
                         SaveMemory.talking = true;
@@ -963,7 +885,6 @@ public class EventManager : MonoBehaviour
         }
         if (moveGhostDown)
         {
-            //SaveMemory.showing = true;
             moveObject.transform.Translate(0, -speed, 0);
             if (moveObject2 != null)
             {
@@ -971,7 +892,7 @@ public class EventManager : MonoBehaviour
             }
             if (moveObject.transform.position.y <= y)
             {
-                if(SaveMemory.Id == 22)
+                if (SaveMemory.Id == 22)
                 {
                     SaveMemory.Id = 23;
                     SaveMemory.talkIndex = 0;
@@ -979,17 +900,15 @@ public class EventManager : MonoBehaviour
                     Talk(SaveMemory.Id);
                     SaveMemory.talkIndex++;
                 }
-                if(SaveMemory.Id == 33)
+                if (SaveMemory.Id == 33)
                 {
-                    // 리퍼가 옆을 보게 하고 싶은데..일단 패스
                     SaveMemory.talkIndex = 0;
                     SaveMemory.talking = true;
                     Talk(SaveMemory.Id);
                     SaveMemory.talkIndex++;
                 }
                 moveGhostDown = false;
-            }            
-            //SaveMemory.showing = false;
+            }
         }
         if (moveGhostRight)
         {
@@ -1000,7 +919,7 @@ public class EventManager : MonoBehaviour
             }
             if (moveObject.transform.position.x >= x)
             {
-                if(SaveMemory.Id == 32)
+                if (SaveMemory.Id == 32)
                 {
                     Ghost.SetActive(false);
                     flower.SetActive(false);
@@ -1019,7 +938,7 @@ public class EventManager : MonoBehaviour
             moveObject.transform.Translate(-speed, 0, 0);
             if (moveObject2 != null)
             {
-                moveObject2.transform.Translate(-speed,0, 0);
+                moveObject2.transform.Translate(-speed, 0, 0);
             }
             if (moveObject.transform.position.x <= x)
             {
@@ -1027,6 +946,7 @@ public class EventManager : MonoBehaviour
             }
         }
 
+        /* 이벤트 발생에 따른 스토리 진행 */
         if (SaveMemory.roomDoor == 1 && Ghost.transform.position == new Vector3(-2.3f, 0, 0))
         {
             SaveMemory.Id = 9;
@@ -1043,8 +963,8 @@ public class EventManager : MonoBehaviour
             ribbon = false;
         }
 
-        if(SaveMemory.enterSchool2 && !SaveMemory.enterSchool3 && !SaveMemory.schoolRoop && !SaveMemory.metTrouble && player.transform.position.x >= -4.2)
-        {      
+        if (SaveMemory.enterSchool2 && !SaveMemory.enterSchool3 && !SaveMemory.schoolRoop && !SaveMemory.metTrouble && player.transform.position.x >= -4.2)
+        {
             SaveMemory.Id = 22;
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
@@ -1057,10 +977,9 @@ public class EventManager : MonoBehaviour
 
             moveGhostDown = true;
             SaveMemory.metTrouble = true;
-            //SaveMemory.showing = true;
         }
 
-
+        /* Z키를 눌러 대화 진행 */
         if (SaveMemory.talking)
         {
             if (Input.GetKeyDown(KeyCode.Z))
@@ -1074,7 +993,6 @@ public class EventManager : MonoBehaviour
         {
             if (ImageControll)
             {
-                Debug.Log("여기도 도달했습니다.");
                 ImageControll = false;
                 SaveMemory.showing = false;
                 Color tmp = past.color;
@@ -1094,7 +1012,7 @@ public class EventManager : MonoBehaviour
                     SaveMemory.talking = false;
                     showImage();
                 }
-                else if(SaveMemory.Id == 180 && !sawPiano)
+                else if (SaveMemory.Id == 180 && !sawPiano)
                 {
                     sawPiano = true;
                     past.sprite = windowCracked;
@@ -1119,7 +1037,7 @@ public class EventManager : MonoBehaviour
                     {
                         SaveMemory.Id = 340;
                     }
-                    else if(SaveMemory.Id == 340)
+                    else if (SaveMemory.Id == 340)
                     {
                         SaveMemory.halfHappy = true;
                         SaveMemory.Id = 3400;
@@ -1145,8 +1063,7 @@ public class EventManager : MonoBehaviour
                     {
                         SaveMemory.Id = 27;
                         SaveMemory.dontGo3 = true;
-                        //SaveMemory.badEnding = true;
-                    }                    
+                    }
                 }
                 select.SetActive(false);
                 Talk(SaveMemory.Id);
@@ -1154,7 +1071,6 @@ public class EventManager : MonoBehaviour
             }
             else if (black)
             {
-                Debug.Log("블랙까지 도달");
                 Ending.SetActive(true);
                 if (SaveMemory.trueEnding)
                 {
@@ -1164,10 +1080,11 @@ public class EventManager : MonoBehaviour
                 {
                     Ending.GetComponent<Text>().text = "Happy Ending?";
                 }
-                else if(SaveMemory.badEnding){
+                else if (SaveMemory.badEnding)
+                {
                     Ending.GetComponent<Text>().text = "Bad Ending...";
                 }
-                
+
             }
         }
 
@@ -1175,7 +1092,6 @@ public class EventManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                //Debug.Log("우선여기에 도달했습니다.");
                 ImageControll = true;
             }
 
@@ -1192,12 +1108,13 @@ public class EventManager : MonoBehaviour
             }
         }
 
-        if(Black.activeSelf == true)
+        if (Black.activeSelf == true)
         {
             black = true;
         }
     }
 
+    /* 캐릭터 표정 다이얼로그를 Dictionary에 저장 */
     void GenerateData()
     {
         ImageData.Add(1, new Sprite[] {
@@ -1586,7 +1503,7 @@ public class EventManager : MonoBehaviour
             player14,//"우리 성공했어!\n이 꽃밭으로 이어지는 문 이었나봐.",
             player16,//"옥상에 꽃도 여기서 따온 건가?"
             player15
-        }) ;
+        });
 
         ImageData.Add(33, new Sprite[]
         {
@@ -1726,14 +1643,12 @@ public class EventManager : MonoBehaviour
         });
     }
 
+    /* 다이얼로그 ID에 맞춰 캐릭터 표정 변경 */
     Sprite GetTalk(int id, int talkIndex)
     {
-        //Debug.Log("TI까지는 왔다");
         if (talkIndex == ImageData[id].Length)
             return null;
         else
             return ImageData[id][talkIndex];
     }
 }
-
-

@@ -6,6 +6,7 @@ public class TalkManager : MonoBehaviour
 {
     Dictionary<int, string[]> talkData;
 
+    /* 대사 다이얼로그를 Dictionary에 저장 */
     void Awake()
     {
         talkData = new Dictionary<int, string[]>();
@@ -119,7 +120,7 @@ public class TalkManager : MonoBehaviour
             "열쇠를 찾아야 해"
         });
 
-        // 세부조사는 140부터 시작됨.140은 열쇠 찾았을 때
+        // 세부조사는 140부터 시작됨. 140은 열쇠를 찾았을 때
 
         talkData.Add(140, new string[]
         {
@@ -216,13 +217,13 @@ public class TalkManager : MonoBehaviour
             "아이스크림 모양도 있고 핫도그 모양도 있고.",
             "우와! 나도 구경시켜 줘!",
             "에이, 몇 년이 지났는데. 지금은 다 잃어버리고 없어.",
-            "그래도 이런 지우개 오랜만에 봐서 기분이 이상하기는 하네.",            
+            "그래도 이런 지우개 오랜만에 봐서 기분이 이상하기는 하네.",
         });
 
         talkData.Add(191, new string[]
         {
-            "이제 리본 맨 귀신한테 돌려주러 가자.",            
-        }); 
+            "이제 리본 맨 귀신한테 돌려주러 가자.",
+        });
 
         talkData.Add(20, new string[]
         {
@@ -256,10 +257,9 @@ public class TalkManager : MonoBehaviour
             "그때 같이 놀았던 애들, 잘 지내고 있으려나?",
             "궁금하면 다시 연락하면 되지.",
             "음... 지금은 만나도 그때처럼 놀지는 못하니까.",
-            "이제는 되돌아가지 못하는 시절이여서\n더 행복하고 좋았던 기억으로 남은 거 아닐까?",           
+            "이제는 되돌아가지 못하는 시절이여서\n더 행복하고 좋았던 기억으로 남은 거 아닐까?",
         });
 
-        // 22번은 없다...실수로...       
         talkData.Add(22, new string[]
         {
             "거기 잠깐!",
@@ -277,7 +277,7 @@ public class TalkManager : MonoBehaviour
         talkData.Add(24, new string[]
         {
             "뭐야, 이렇게 약한 녀석이 우리 딱지를 훔쳐간 거야?",
-            "뭔가 이상하네.",            
+            "뭔가 이상하네.",
         });
 
         talkData.Add(25, new string[]
@@ -305,8 +305,8 @@ public class TalkManager : MonoBehaviour
             "너네가 3층 교실에 들르면,\n나도 같이 올라갔다 올까 해서."
         });
 
-        // 선택 후
-        // 배드엔딩 루트
+        /* 선택 후 */
+        /* 배드엔딩 선택 : 3층을 들르지 않음 */
         talkData.Add(27, new string[]
         {
             "굳이 3층을 들러야 할 필요는 없지?",
@@ -321,7 +321,7 @@ public class TalkManager : MonoBehaviour
             "안녕!"
         });
 
-        // 3층에 들른다.
+        /* 진엔딩 및 노말 엔딩 선택 : 3층에 들름 */
         talkData.Add(28, new string[]
         {
             "3층도 돌아보고 싶어.",
@@ -330,7 +330,7 @@ public class TalkManager : MonoBehaviour
             "그래그래.",
             "둘 다 잘 가!\n너네랑 딱지치기 재밌었어!",
             "잘 있어!",
-            "안녕!",           
+            "안녕!",
         });
 
         // 3층에 올라와서
@@ -340,7 +340,7 @@ public class TalkManager : MonoBehaviour
             "그래도 소개하자면 위쪽이 5학년 교실이고 아래쪽이 6학년 교실이야.",
             "어차피 여긴 더 이상 아무 사람도 안 올 테니까 마음대로 써도 괜찮아.",
             "난 이제 간다?\n나갈 때 알아서 나가면 돼!",
-            "그래, 같이 올라와줘서 고마워."        
+            "그래, 같이 올라와줘서 고마워."
         });
 
         // 책갈피 발견
@@ -357,7 +357,7 @@ public class TalkManager : MonoBehaviour
         talkData.Add(31, new string[]
         {
             "내 6학년 단체 사진이 왜 여기 있지?",
-            "어, 이 사진... 잠깐만.",            
+            "어, 이 사진... 잠깐만.",
         });
         talkData.Add(311, new string[]
         {
@@ -373,7 +373,7 @@ public class TalkManager : MonoBehaviour
             "옥상 가는 길은 이쪽이야!"
         });
 
-        // 배드엔딩
+        /* 배드엔딩 */
         talkData.Add(32, new string[]
         {
             "저게 내가 말한 문이야!",
@@ -384,13 +384,13 @@ public class TalkManager : MonoBehaviour
         talkData.Add(320, new string[]
         {
             "이제 준비됐어!",
-            "꽃을 들고 문으로 들어가자",            
+            "꽃을 들고 문으로 들어가자",
         });
         talkData.Add(321, new string[]
         {
             "어? 잠깐만!",
             "분명히 잘 잡혀 있었는데?",
-            "나 못 들어갔어!"            
+            "나 못 들어갔어!"
         });
         talkData.Add(322, new string[]
         {
@@ -399,10 +399,11 @@ public class TalkManager : MonoBehaviour
         });
         talkData.Add(323, new string[]
         {
-            "...",            
+            "...",
             "어?" ,
             "귀신아..?"
         });
+
 
         // 저승사자와 만나다.
         talkData.Add(33, new string[]
@@ -461,18 +462,20 @@ public class TalkManager : MonoBehaviour
             "경계가 어떻게 될지 모르겠지만...\n저승문으로 가면 진짜로 너가 죽는거잖아."
         });
 
+        /* 노말엔딩 선택 */
         talkData.Add(3400, new string[]
         {
             "그래도 난 너랑 같이 갈래.",
             "여기 있다가 영영 경계에 갇히게 되면 여기선 아무것도 못하게 되잖아.",
             "어차피 죽는 거랑 다름없는 상황이라면 난 너랑 같이 가는 게 더 좋아.",
-            "정 그렇다면 알았어...",        
+            "정 그렇다면 알았어...",
         });
 
+        /* 진엔딩 선택 */
         talkData.Add(3401, new string[]
         {
             "...알았어. 여기 남아있을게.",
-            "좋아! 너가 꼭 살아남길 바랄게.",            
+            "좋아! 너가 꼭 살아남길 바랄게.",
         });
 
         talkData.Add(341, new string[]
@@ -492,7 +495,7 @@ public class TalkManager : MonoBehaviour
         talkData.Add(3500, new string[]
         {
             "...",
-            "나도 가자.",            
+            "나도 가자.",
         });
 
         talkData.Add(351, new string[]
@@ -504,6 +507,7 @@ public class TalkManager : MonoBehaviour
             "응. 너도 조심히 가."
         });
 
+        /* 노말 엔딩 */
         talkData.Add(352, new string[]
         {
             "...",
@@ -516,13 +520,14 @@ public class TalkManager : MonoBehaviour
             "응! 졸업하자마자 죽었거든."
         });
 
+        /* 진엔딩 */
         talkData.Add(36, new string[]
         {
             "진짜 여기에 갇힌 건가?",
             "...아! 정신이 드니?",
-            "응? 내 이름이 들린거 같았는데?",           
+            "응? 내 이름이 들린거 같았는데?",
         });
- 
+
         talkData.Add(37, new string[]
         {
             "정신이 드니?",
@@ -544,6 +549,7 @@ public class TalkManager : MonoBehaviour
         });
     }
 
+    /* 다이얼로그 ID에 맞춰 대사 진행 */
     public string GetTalk(int id, int talkIndex)
     {
         if (talkIndex == talkData[id].Length)
