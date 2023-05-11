@@ -8,7 +8,7 @@ public class SaveMemory : MonoBehaviour
     static public int Id = 1;
     static public int talkIndex = 0;
 
-    /* 스토리 진행 및 엔딩 분기*/
+    /* 스토리 진행 및 엔딩 분기 */
     static public bool gameStart = false;
     static public bool metGhost = false;
     static public bool enterHouse = false;
@@ -36,7 +36,7 @@ public class SaveMemory : MonoBehaviour
     static public bool findBook = false;
     static public bool findPicture = false;
 
-
+    /* 게임 진행 상황 */
     static public bool talking = true;
     static public bool showing = false;
     static public bool selecting = false;
@@ -47,5 +47,4 @@ public class SaveMemory : MonoBehaviour
     {
         talking = true;
     }
-
 }

@@ -1583,50 +1583,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1180330414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1180330416}
-  - component: {fileID: 1180330415}
-  m_Layer: 0
-  m_Name: DontDestroy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1180330415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180330414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01b48ded7dfc0d74a8d6cfbf1a7cf6c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor: {fileID: 0}
---- !u!4 &1180330416
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180330414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.192245, y: -1.6738355, z: -0.38483748}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1200475059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,6 +3018,8 @@ MonoBehaviour:
   glass7: {fileID: 0}
   Reaper1: {fileID: 0}
   Reaper2: {fileID: 0}
+  scanObject: {fileID: 0}
+  past: {fileID: 0}
   roomDoor: {fileID: 0}
   coffee: {fileID: 0}
   memo: {fileID: 0}
@@ -3077,23 +3035,6 @@ MonoBehaviour:
   album1: {fileID: 0}
   album2: {fileID: 0}
   album3: {fileID: 0}
-  Tmanager: {fileID: 1168679555}
-  SM: {fileID: 571052840}
-  Black: {fileID: 1200475059}
-  Ending: {fileID: 0}
-  talkTextUp: {fileID: 356545253}
-  talkTextDown: {fileID: 417297353}
-  talkUIUP: {fileID: 25655390}
-  talkUIDown: {fileID: 966579882}
-  talkImageUp: {fileID: 683389377}
-  talkImageDown: {fileID: 932520098}
-  select: {fileID: 0}
-  selectBox1: {fileID: 0}
-  selectBox2: {fileID: 0}
-  selectText1: {fileID: 0}
-  selectText2: {fileID: 0}
-  past: {fileID: 0}
-  scanObject: {fileID: 0}
   player: {fileID: 656418435}
   Ghost: {fileID: 529465308}
   GhostRibbon: {fileID: 0}
@@ -3104,3 +3045,18 @@ MonoBehaviour:
   flower: {fileID: 0}
   flowerSmile: {fileID: 0}
   flowerSad: {fileID: 0}
+  Tmanager: {fileID: 1168679555}
+  talkUIUP: {fileID: 25655390}
+  talkUIDown: {fileID: 966579882}
+  talkTextUp: {fileID: 356545253}
+  talkTextDown: {fileID: 417297353}
+  talkImageUp: {fileID: 683389377}
+  talkImageDown: {fileID: 932520098}
+  select: {fileID: 0}
+  selectBox1: {fileID: 0}
+  selectBox2: {fileID: 0}
+  selectText1: {fileID: 0}
+  selectText2: {fileID: 0}
+  SM: {fileID: 571052840}
+  Black: {fileID: 1200475059}
+  Ending: {fileID: 0}

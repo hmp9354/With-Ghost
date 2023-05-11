@@ -17,9 +17,6 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     Animator animator;
 
-    static bool metGhost = false;
-    static bool houseEnter = false;
-
     private void Awake()
     {
         /* 게임을 시작할 때 플레이어가 누워 있음 */
@@ -34,7 +31,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        /* 플레이어 동작 관리 : 플레이어가 특정 지점까지 이동할 경우 이벤트 발생*/
+        /* 플레이어 동작 관리 : 플레이어가 특정 지점까지 이동할 경우 이벤트 발생 */
         if ((!SaveMemory.metGhost) && (transform.position.x >= -2))
         {
             Emanager.meetGhost();
@@ -53,7 +50,7 @@ public class Player : MonoBehaviour
             h = 0;
             v = 0;
         }
-        // 스토리 진행중이 아닐 때에만 캐릭터 이동 및 상호작용 가능
+        // 스토리 진행 중이 아닐 때에만 캐릭터 이동 및 상호작용 가능
         if (!SaveMemory.talking && !SaveMemory.selecting && !SaveMemory.MiniGame)
         {
             h = Input.GetAxisRaw("Horizontal");
@@ -62,7 +59,7 @@ public class Player : MonoBehaviour
             int tDirX;
             int tDirY;
 
-            // 플레이어 이동방향에 맞춰서 애니메이션 동작
+            // 플레이어 이동 방향에 맞춰서 애니메이션 동작
             if (animator.GetInteger("DirX") != h)
             {
                 animator.SetBool("isChange", true);
@@ -102,7 +99,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         rigid.velocity = new Vector2(h, v) * force;
-        
+
         Debug.DrawRay(rigid.position, dirVec * 0.7f, new Color(0, 1, 0));
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("Object"));
 
@@ -115,9 +112,9 @@ public class Player : MonoBehaviour
 
     }
 
-    /* 특정 위치 도달 할 때(충돌 할 때) 맵 이동 */
+    /* 특정 위치에 도달 할 때(충돌 할 때) 맵 이동 */
     private void OnCollisionEnter2D(Collision2D collision)
-    {        
+    {
         if (collision.collider.CompareTag("goTwo"))
         {
             if (SaveMemory.RibbonGB)

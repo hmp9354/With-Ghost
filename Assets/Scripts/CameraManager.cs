@@ -12,14 +12,14 @@ public class CameraManager : MonoBehaviour
     {
         pPosition = player.transform.position;
     }
-    
+
     void Update()
     {
-        /* 카메라 위치는 플레이어를 따라감 */
+        /* 카메라는 플레이어를 따라감 */
         pPosition = player.transform.position;
         if (SaveMemory.enterSchool1 || SaveMemory.enterSchool2)
         {
-            nowPosition = pPosition;            
+            nowPosition = pPosition;
             nowPosition.z = -10f;
 
             if (nowPosition.x <= 0.1)
@@ -42,7 +42,7 @@ public class CameraManager : MonoBehaviour
             transform.position = nowPosition;
         }
         else if (SaveMemory.enterHouse)
-        {            
+        {
             nowPosition = pPosition;
             nowPosition.x = 0.1f;
             nowPosition.z = -10f;
@@ -54,7 +54,7 @@ public class CameraManager : MonoBehaviour
             else if (nowPosition.y >= 0.6)
             {
                 nowPosition.y = 0.6f;
-            }           
+            }
             transform.position = nowPosition;
         }
     }

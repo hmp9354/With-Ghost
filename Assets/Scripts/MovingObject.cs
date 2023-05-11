@@ -13,7 +13,6 @@ public class MovingObject : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-
     void Update()
     {
         /* 캐릭터 이동 및 Walking 애니메이션 동작 */
