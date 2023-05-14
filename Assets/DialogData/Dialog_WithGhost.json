@@ -1,17 +1,62 @@
 {
   "Dialog": [
     {
-      "ID": 1,
+      "ID": 0,
       "Chat": [
         {
-          "talkIndex": 1,
+          "talkIndex": 0,
           "ImageData": "player1",
           "talkData": "어?"
         },
         {
-          "talkIndex": 2,
+          "talkIndex": 1,
           "ImageData": "player4",
           "talkData": "여기가...어디지?"
+        }
+      ]
+    },
+    {
+      "ID": 1,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player1",
+          "talkData": "!!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost5",
+          "talkData": "너, 사람이야?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ghost9",
+          "talkData": "흠..."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost2",
+          "talkData": "아무렴 어때! 네가 날 도와주면 되겠다!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player1",
+          "talkData": "???"
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "ghost6",
+          "talkData": "사실 말이야, 엄청 수상한 문을 발견했거든."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "ghost10",
+          "talkData": "그게 아마 여기서 나가는 문인 것 같아서 열려고 했는데, \n그대로 몸이 통과하는 거 있지!"
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "ghost6",
+          "talkData": "그래서 방금 생각해낸 게 뭐냐면"
         }
       ]
     },
@@ -19,44 +64,19 @@
       "ID": 2,
       "Chat": [
         {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "쨘!\n이렇게 변한 날 네가 들고 가주는 거야. 어때?"
+        },
+        {
           "talkIndex": 1,
-          "ImageData": "player1",
-          "talkData": "!!"
+          "ImageData": "",
+          "talkData": "난 수상한 문 위치를 알려주고 넌 날 들어주고!\n서로한테 이득인 일이라구!"
         },
         {
           "talkIndex": 2,
-          "ImageData": "ghost5",
-          "talkData": "너, 사람이야?"
-        },
-        {
-          "talkIndex": 3,
-          "ImageData": "ghost9",
-          "talkData": "흠..."
-        },
-        {
-          "talkIndex": 4,
-          "ImageData": "ghost2",
-          "talkData": "아무렴 어때! 네가 날 도와주면 되겠다!"
-        },
-        {
-          "talkIndex": 5,
-          "ImageData": "player1",
-          "talkData": "???"
-        },
-        {
-          "talkIndex": 6,
-          "ImageData": "ghost6",
-          "talkData": "사실 말이야, 엄청 수상한 문을 발견했거든."
-        },
-        {
-          "talkIndex": 7,
-          "ImageData": "ghost10",
-          "talkData": "그게 아마 여기서 나가는 문인 것 같아서 열려고 했는데, \n그대로 몸이 통과하는 거 있지!"
-        },
-        {
-          "talkIndex": 8,
-          "ImageData": "ghost6",
-          "talkData": "그래서 방금 생각해낸 게 뭐냐면"
+          "ImageData": "",
+          "talkData": "엄... 그 바위는 들기 힘들 것 같은데.."
         }
       ]
     }

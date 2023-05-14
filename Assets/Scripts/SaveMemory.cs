@@ -5,8 +5,8 @@ using UnityEngine;
 public class SaveMemory : MonoBehaviour
 {
     /* 대사 다이얼로그 ID */
-    static public int Id = 1;
-    static public int talkIndex = 0;
+    static public int Id = 0;
+    static public int talkIndex = 0;   
 
     /* 스토리 진행 및 엔딩 분기 */
     static public bool gameStart = false;
@@ -35,7 +35,7 @@ public class SaveMemory : MonoBehaviour
     static public bool dontGo3 = false;
     static public bool findBook = false;
     static public bool findPicture = false;
-
+    
     /* 게임 진행 상황 */
     static public bool talking = true;
     static public bool showing = false;
