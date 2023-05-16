@@ -5,7 +5,7 @@ using UnityEngine;
 public class SaveMemory : MonoBehaviour
 {
     /* 대사 다이얼로그 ID */
-    static public int Id = 0;
+    static public int Id = 1;
     static public int talkIndex = 0;   
 
     /* 스토리 진행 및 엔딩 분기 */

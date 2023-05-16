@@ -79,6 +79,1652 @@
           "talkData": "엄... 그 바위는 들기 힘들 것 같은데.."
         }
       ]
+    },
+    {
+      "ID": 3,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost3",
+          "talkData": "빙의했는데 놀라지도 않다니..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost10",
+          "talkData": "지금은 바위라서 아무것도 못 보여줬지만,\n빙의하는 물건에 따라 기억도 읽을 수 있어. 나중에 보여줄게."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player5",
+          "talkData": "그래, 그래서...\n저기 벽 중간에 있는 게 나가는 문이지?"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost11",
+          "talkData": "저건 가짜 문이야."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost2",
+          "talkData": "진짜 나가는 문은 투명해서 안 보이는데,\n내가 문 앞에 서서 알려줄게!"
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost4",
+          "talkData": "그쪽은 가짜 문이래두."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player3",
+          "talkData": "내가 처음 보는 귀신 말을 어떻게 믿겠어?"
+        }
+      ]
+    },
+    {
+      "ID": 5,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "손잡이가 만져진다."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost2",
+          "talkData": "난 먼저 가있을게!"
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player1",
+          "talkData": "진짜였네?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost2",
+          "talkData": "헤헿, 앞으로도 나만 믿으라구!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player2",
+          "talkData": "그나저나 여긴 어디야?\n집 안에 들어온 거 같기는 한데..."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost11",
+          "talkData": "나도 여기가 어딘지는 몰라! 갇힌 이유도 모르구.\n다만 수상한 문이 있는 위치를 알고만 있을 뿐이야."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost2",
+          "talkData": "여기서는 이제 현관 밖으로 나가야해!\n따라와!"
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player5",
+          "talkData": "문이 잠겨있어!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost4",
+          "talkData": "...어? 그럼 어쩌지?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player6",
+          "talkData": "밖에서도 안 열려?"
+        }
+      ]
+    },
+    {
+      "ID": 8,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost10",
+          "talkData": "고장난건가?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost8",
+          "talkData": "아, 문고리에 빙의해볼게!\n빙의하면 빙의한 물건의 기억이 보이니까!"
+        }
+      ]
+    },
+    {
+      "ID": 9,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost11",
+          "talkData": "이 문 젓가락으로 풀면 열려!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player7",
+          "talkData": "이 방에 젓가락이 있을 것 같진 않아.\n그렇다면,"
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player8",
+          "talkData": "젓가락 같은 물건을 찾아보자."
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player3",
+          "talkData": "이 볼펜을 분해해서,"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "볼펜심을 획득했다."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player8",
+          "talkData": "이거로 열어보자."
+        }
+      ]
+    },
+    {
+      "ID": 12,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "볼펜심을 잠금장치에 넣자 문이 열린다."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player9",
+          "talkData": "됐다!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ghost2",
+          "talkData": "오! 다행이다!"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "player8",
+          "talkData": "이제 현관으로 가볼까?"
+        }
+      ]
+    },
+    {
+      "ID": 13,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player6",
+          "talkData": "뭐야.\n열쇠로 여는 쪽이 집 쪽으로 있네?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost12",
+          "talkData": "어...난 맨날 통과해서 다녀서 어떻게 여는지 잘 모르겠어."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player7",
+          "talkData": "열쇠를 찾아야 되나?"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost11",
+          "talkData": "물건을 조사하면 내가 빙의해서 기억을 볼게!"
+        }
+      ]
+    },
+    {
+      "ID": 14,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player8",
+          "talkData": "열쇠를 찾아야 해"
+        }
+      ]
+    },
+    {
+      "ID": 15,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost4",
+          "talkData": "뭐를 메모하고 있는 거지?"
+        }
+      ]
+    },
+    {
+      "ID": 16,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost9",
+          "talkData": "음...피아노를 조사해볼까?"
+        }
+      ]
+    },
+    {
+      "ID": 17,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost1",
+          "talkData": "앵무새다!"
+        }
+      ]
+    },
+    {
+      "ID": 18,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost9",
+          "talkData": "!?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost12",
+          "talkData": "쟤 열쇠 물고 있는거 아니야?"
+        }
+      ]
+    },
+    {
+      "ID": 19,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player6",
+          "talkData": "아...\n열쇠...피아노 깊숙히 들어갔을 것 같은데..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost11",
+          "talkData": "나한테 맡겨!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "",
+          "talkData": "귀신이 피아노 안에서 열쇠를 꺼내왔다."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "",
+          "talkData": "현관문 열쇠를 획득했다."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost2",
+          "talkData": "이제 나가면 되겠다. 그치?"
+        }
+      ]
+    },
+    {
+      "ID": 20,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "열쇠로 현관문을 열었다."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player9",
+          "talkData": "됐다!"
+        }
+      ]
+    },
+    {
+      "ID": 21,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player3",
+          "talkData": "어? 바로 학교잖아?."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost11",
+          "talkData": "응! 이제 여기로 올라가기만 하면 돼."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "",
+          "talkData": "잠깐만!"
+        }
+      ]
+    },
+    {
+      "ID": 22,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ribbon1",
+          "talkData": "잠깐 나 좀 도와주면 안 될까?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost4",
+          "talkData": "무슨 일인데?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ribbon2",
+          "talkData": "2층 귀신들이 내 지우개를 가져갔었는데,\n가지고 놀다가 잃어버렸대."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ribbon1",
+          "talkData": "혼자선 도저히 못 찾겠어서 그런데, 도와줄 수 있니?"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost5",
+          "talkData": "걔네들 보고 책임지고 찾아달라고 하면 되지."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "ribbon2",
+          "talkData": "걔네들은 3, 4학년 귀신인 걸?"
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "ribbon1",
+          "talkData": "3, 4학년은 무섭단 말이야."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "ghost9",
+          "talkData": "쪼꼬만 것들이 해봤자 뭘 하겠어?"
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "player3",
+          "talkData": "너는 몇 살인데?"
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "ghost13",
+          "talkData": "엄...몰라..."
+        },
+        {
+          "talkIndex": 10,
+          "ImageData": "ribbon2",
+          "talkData": "내 지우개를 찾아주면 딱지 3개 줄게."
+        },
+        {
+          "talkIndex": 11,
+          "ImageData": "ghost4",
+          "talkData": "딱지?"
+        },
+        {
+          "talkIndex": 12,
+          "ImageData": "ribbon3",
+          "talkData": "응. 2층 귀신들을 만났을 때 분명 도움이 될 거야."
+        },
+        {
+          "talkIndex": 13,
+          "ImageData": "ribbon1",
+          "talkData": "둘 다 딱지를 좋아하니깐."
+        },
+        {
+          "talkIndex": 14,
+          "ImageData": "player10",
+          "talkData": "좋아, 열심히 찾아볼게. \n어차피 내가 없으면 얜 할 것도 없거든."
+        },
+        {
+          "talkIndex": 15,
+          "ImageData": "ghost14",
+          "talkData": "!!!"
+        },
+        {
+          "talkIndex": 16,
+          "ImageData": "ribbon3",
+          "talkData": "정말 고마워! 1학년 교실은 내가 찾아볼게.\n너네는 2학년 교실을 살펴봐줘."
+        }
+      ]
+    },
+    {
+      "ID": 23,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player4",
+          "talkData": "지우개가 창문에 맞은 건가?"
+        }
+      ]
+    },
+    {
+      "ID": 24,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost8",
+          "talkData": "맞아! 지우개는 여기서 튕겼어!"
+        }
+      ]
+    },
+    {
+      "ID": 25,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player11",
+          "talkData": "이건가?"
+        }
+      ]
+    },
+    {
+      "ID": 26,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost4",
+          "talkData": "오! 햄버거 빵처럼 생겼다."
+        }
+      ]
+    },
+    {
+      "ID": 27,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player5",
+          "talkData": "이렇게 봐서는 지우개인지 모르겠네.\n그래도 혹시 모르니까 챙기자."
+        }
+      ]
+    },
+    {
+      "ID": 28,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player12",
+          "talkData": "찾았다!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost11",
+          "talkData": "어디어디?"
+        }
+      ]
+    },
+    {
+      "ID": 29,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost5",
+          "talkData": "이게 어떻게 지우개야?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player9",
+          "talkData": "이런 지우개도 있어.\n어렸을 때 음식모양 지우개가 집에 많았거든."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player8",
+          "talkData": "아이스크림 모양도 있고 핫도그 모양도 있고."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost2",
+          "talkData": "우와! 나도 구경시켜 줘!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player5",
+          "talkData": "에이, 몇 년이 지났는데. 지금은 다 잃어버리고 없어."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "player10",
+          "talkData": "그래도 이런 지우개 오랜만에 봐서 기분이 이상하기는 하네."
+        }
+      ]
+    },
+    {
+      "ID": 30,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player8",
+          "talkData": "이제 리본 맨 귀신한테 돌려주러 가자."
+        }
+      ]
+    },
+    {
+      "ID": 31,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ribbon2",
+          "talkData": "어떡하지? 1학년 교실에는 없어. 열심히 찾았는데도 안보여..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost2",
+          "talkData": "쨘!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ribbon3",
+          "talkData": "우와! 내 지우개!\n양상추 하나쯤은 없어졌을 줄 알았는데 전부 찾았구나!"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ribbon4",
+          "talkData": "정말 고마워. 여기, 아까 말했던 딱지 3개!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "",
+          "talkData": "딱지 3개를 얻었다."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "ghost9",
+          "talkData": "다음부터는 2층애들이 괴롭히면 너도 같이 싸워."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "ghost11",
+          "talkData": "이미 귀신인데 더 죽기야 하겠어?"
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "ribbon5",
+          "talkData": "히히. 알았어."
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "ribbon3",
+          "talkData": "그래도 2층 귀신들 만나서 혼내지는 마.\n가끔 내가 도움 받기도 하거든."
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "ghost4",
+          "talkData": "그렇다면야, 뭐..."
+        },
+        {
+          "talkIndex": 10,
+          "ImageData": "ribbon5",
+          "talkData": "다들 잘 가! 지우개 찾아준 거 진짜 고마워!"
+        },
+        {
+          "talkIndex": 11,
+          "ImageData": "player10",
+          "talkData": "그래, 너도 잘 있어!"
+        }
+      ]
+    },
+    {
+      "ID": 32,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ribbon5",
+          "talkData": "2층 가는 길은 내 왼쪽으로 쭉 걸어가면 돼!"
+        }
+      ]
+    },
+    {
+      "ID": 33,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ribbon1",
+          "talkData": "훌쩍훌쩍"
+        }
+      ]
+    },
+    {
+      "ID": 34,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player9",
+          "talkData": "그러고 보니, 어렸을 때 딱지치기 많이 했는데."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player5",
+          "talkData": "그때 같이 놀았던 애들, 잘 지내고 있으려나?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ghost11",
+          "talkData": "궁금하면 다시 연락하면 되지."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "player13",
+          "talkData": "음... 지금은 만나도 그때처럼 놀지는 못하니까."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player6",
+          "talkData": "이제는 되돌아가지 못하는 시절이여서\n더 행복하고 좋았던 기억으로 남은 거 아닐까?"
+        }
+      ]
+    },
+    {
+      "ID": 35,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "거기 잠깐!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "소지품 검사가 있겠다!"
+        }
+      ]
+    },
+    {
+      "ID": 36,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "cap1",
+          "talkData": "아니! 이건...! 내가 잃어버렸던 딱지!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "glass1",
+          "talkData": "뭐야! 훔친 거야?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "cap2",
+          "talkData": "용서할 수 없어!"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost14",
+          "talkData": "아니, 진정하고 얘기좀 들어봐!"
+        }
+      ]
+    },
+    {
+      "ID": 37,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "cap3",
+          "talkData": "뭐야, 이렇게 약한 녀석이 우리 딱지를 훔쳐간 거야?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "glass2",
+          "talkData": "뭔가 이상하네."
+        }
+      ]
+    },
+    {
+      "ID": 38,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "cap4",
+          "talkData": "크윽, 우리가 지다니...!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "glass2",
+          "talkData": "분하다!"
+        }
+      ]
+    },
+    {
+      "ID": 39,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost15",
+          "talkData": "이 딱지는 우리가 훔친 게 아니야.\n1층 귀신이 준거라구!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "glass1",
+          "talkData": "1층 귀신이?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "cap5",
+          "talkData": "아!"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "glass3",
+          "talkData": "왜?"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "cap6",
+          "talkData": "이거 내가 저번에 1층에서 잃어버렸던 거야.\n까먹었었어."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "glass4",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "ghost14",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "player5",
+          "talkData": "우린 이제 가볼게.\n위로 올라갈 생각이었거든."
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "glass3",
+          "talkData": "위로? 3층도 들르는 거야?"
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "ghost4",
+          "talkData": "왜?"
+        },
+        {
+          "talkIndex": 10,
+          "ImageData": "cap7",
+          "talkData": "얘, 사실 3층 귀신이야."
+        },
+        {
+          "talkIndex": 11,
+          "ImageData": "cap6",
+          "talkData": "귀신 셋이서 1층, 2층, 3층을 맡아서 \n교실에서 사람이 뭘 하는지 관찰하는 게 우리 일이야."
+        },
+        {
+          "talkIndex": 12,
+          "ImageData": "glass5",
+          "talkData": "여긴 살아있는 사람이 오진 않으니깐\n심심해서 2층으로 놀러왔지."
+        },
+        {
+          "talkIndex": 13,
+          "ImageData": "glass3",
+          "talkData": "너네가 3층 교실에 들르면,\n나도 같이 올라갔다 올까 해서."
+        }
+      ]
+    },
+    {
+      "ID": 40,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player2",
+          "talkData": "굳이 3층을 들러야 할 필요는 없지?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost11",
+          "talkData": "응. 어차피 수상한 문은 옥상에 있으니깐!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "glass6",
+          "talkData": "좋은 생각이야! 어차피 3층에도 평범한 물건밖에 없거든."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "glass7",
+          "talkData": "연필, 지우개, 가방, 보드게임, 단체 사진 같은 거 말이야."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player8",
+          "talkData": "그렇구나."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "ghost2",
+          "talkData": "이제 출발하자. 목적지가 눈앞에 있다구!"
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "cap6",
+          "talkData": "다들 잘 가! 너네랑 딱지치기 재밌었어!"
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "glass6",
+          "talkData": "안녕!"
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "ghost1",
+          "talkData": "잘 있어!"
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "player12",
+          "talkData": "안녕!"
+        }
+      ]
+    },
+    {
+      "ID": 41,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player8",
+          "talkData": "3층도 돌아보고 싶어."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "cap8",
+          "talkData": "하긴,\n거의 10년 동안이나 내려와 있는 건 조금 너무한 거 같기도 하다."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "glass5",
+          "talkData": "그런가...\n그래도 너네 데려다 주고 나서 아무 일 없으면 바로 내려올 거야."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost11",
+          "talkData": "그래그래."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "cap6",
+          "talkData": "둘 다 잘 가!\n너네랑 딱지치기 재밌었어!"
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "ghost1",
+          "talkData": "잘 있어!"
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "player12",
+          "talkData": "안녕!"
+        }
+      ]
+    },
+    {
+      "ID": 42,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "glass3",
+          "talkData": "여기 진짜 볼 거 없어."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "glass7",
+          "talkData": "그래도 소개하자면 위쪽이 5학년 교실이고 아래쪽이 6학년 교실이야."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "glass6",
+          "talkData": "어차피 여긴 더 이상 아무 사람도 안 올 테니까 마음대로 써도 괜찮아."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "glass7",
+          "talkData": "난 이제 간다?\n나갈 때 알아서 나가면 돼!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player14",
+          "talkData": "그래, 같이 올라와줘서 고마워."
+        }
+      ]
+    },
+    {
+      "ID": 43,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player1",
+          "talkData": "어! 이거 예전에 잃어버렸던 거잖아?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost4",
+          "talkData": "어렸을 때 잃어 버렸던 걸 지금까지 기억해?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player5",
+          "talkData": "응, 그때 친해지고 싶은 친구가 있었는데\n그 애가 생일선물로 준 거였거든."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "player13",
+          "talkData": "나한텐 이게 특별한 물건이야."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player5",
+          "talkData": "그렇게나 좋았었는데 너무 오래되었는지 얼굴은 기억이 안 나네."
+        }
+      ]
+    },
+    {
+      "ID": 44,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player6",
+          "talkData": "내 6학년 단체 사진이 왜 여기 있지?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost4",
+          "talkData": "어, 이 사진... 잠깐만."
+        }
+      ]
+    },
+    {
+      "ID": 45,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost10",
+          "talkData": "그래, 맞아. 나는..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player15",
+          "talkData": "뭐야?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ghost4",
+          "talkData": "응?"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost13",
+          "talkData": "아....아니! 별거 없었어!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost11",
+          "talkData": "이제 진짜 옥상으로 가면 마지막이네!"
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "player13",
+          "talkData": "그러네."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "player10",
+          "talkData": "서로 돕는 사이이긴 하지만 그래도 너 없었으면 여기까지 오기 힘들었을 거야."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "player14",
+          "talkData": "이제까지 제대로 도와줘서 고마워."
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "ghost10",
+          "talkData": "어...."
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "ghost12",
+          "talkData": "옥상 가는 길은 이쪽이야!"
+        }
+      ]
+    },
+    {
+      "ID": 46,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost2",
+          "talkData": "저게 내가 말한 문이야!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost9",
+          "talkData": "이제 내가 빙의할 만한 게..."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player9",
+          "talkData": "저기 화단에 떨어져 있는 꽃은 어때?"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost2",
+          "talkData": "좋아!"
+        }
+      ]
+    },
+    {
+      "ID": 47,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost11",
+          "talkData": "이제 준비됐어!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player8",
+          "talkData": "꽃을 들고 문으로 들어가자"
+        }
+      ]
+    },
+    {
+      "ID": 48,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost4",
+          "talkData": "어? 잠깐만!"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost3",
+          "talkData": "분명히 잘 잡혀 있었는데?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "ghost10",
+          "talkData": "나 못 들어갔어!"
+        }
+      ]
+    },
+    {
+      "ID": 49,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player12",
+          "talkData": "우리 성공했어!\n이 꽃밭으로 이어지는 문 이었나봐."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player14",
+          "talkData": "옥상에 꽃도 여기서 따온 건가?"
+        }
+      ]
+    },
+    {
+      "ID": 50,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player14",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player16",
+          "talkData": "어?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player15",
+          "talkData": "귀신아..?"
+        }
+      ]
+    },
+    {
+      "ID": 51,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "Reaper1",
+          "talkData": "이제 들어가도 되는가?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost4",
+          "talkData": "누...누구세요?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "Reaper2",
+          "talkData": "원래 너를 데려가기로 했던 저승사자다."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "Reaper1",
+          "talkData": "네가 경계를 만드는 바람에 바로 저승으로 데려갈 수가 없었어."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "Reaper2",
+          "talkData": "이렇게 경계가 다시 열리기도 드문 일인데...\n운이 좋았구나."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "player11",
+          "talkData": "경계?"
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "Reaper1",
+          "talkData": "사람이 죽은 후에 자신이 누구였는지 잊게 된다면\n본인이 살던 장소로 구성된 경계를 만들게 되지."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "Reaper2",
+          "talkData": "자신이 누군지 다시 알게 된다면\n저승사자가 경계에 들어올 수 있지만,"
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "Reaper1",
+          "talkData": "그런 경우는 흔치 않아."
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "player12",
+          "talkData": "그럼 너, 기억이 다 난거야?"
+        },
+        {
+          "talkIndex": 10,
+          "ImageData": "ghost12",
+          "talkData": "응... 미안,\n내가 누구인지는 못 말해줄 것 같아."
+        },
+        {
+          "talkIndex": 11,
+          "ImageData": "player11",
+          "talkData": "왜?"
+        },
+        {
+          "talkIndex": 12,
+          "ImageData": "ghost3",
+          "talkData": "살아있을 때 친해지지도 못 했는데 귀신이 되어서야,"
+        },
+        {
+          "talkIndex": 13,
+          "ImageData": "ghost10",
+          "talkData": "그것도 아무 기억도 없는 상태로\n너한테 말을 걸고 같이 나가자고 했던 게 창피해."
+        },
+        {
+          "talkIndex": 14,
+          "ImageData": "ghost12",
+          "talkData": "게다가 내가 귀신인 상태로 기억될 거잖아?\n그건 싫어!"
+        },
+        {
+          "talkIndex": 15,
+          "ImageData": "player5",
+          "talkData": "알았어. 그러면 더 안 물어 볼게."
+        },
+        {
+          "talkIndex": 16,
+          "ImageData": "player13",
+          "talkData": "너 이제 저승 갈 건데 후회할 일 남기면 마음 안 좋잖아."
+        },
+        {
+          "talkIndex": 17,
+          "ImageData": "Reaper2",
+          "talkData": ".... 자네는 산 사람인가, 죽은 사람인가?"
+        },
+        {
+          "talkIndex": 18,
+          "ImageData": "player6",
+          "talkData": "그야 당연히 살아있는 사람..."
+        },
+        {
+          "talkIndex": 19,
+          "ImageData": "Reaper2",
+          "talkData": "산 사람이기엔 경계에 들어올 수가 없고\n죽은 사람이기엔 귀신의 형태로 변하지 않았으니,"
+        },
+        {
+          "talkIndex": 20,
+          "ImageData": "Reaper1",
+          "talkData": "솔직히 어째야 할지 난감하네."
+        },
+        {
+          "talkIndex": 21,
+          "ImageData": "player16",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 22,
+          "ImageData": "Reaper2",
+          "talkData": "게다가 경계에서 나갈 수 있는 통로는 여기,\n이 저승으로 가는 저승문 뿐이야."
+        },
+        {
+          "talkIndex": 23,
+          "ImageData": "Reaper1",
+          "talkData": "저승문으로 지나가게 되면 확실하게 죽게 되니, \n어떻게 할 것인지 잘 생각해보게."
+        },
+        {
+          "talkIndex": 24,
+          "ImageData": "Reaper2",
+          "talkData": "귀신이 저승문으로 들어간 후에 \n경계가 어찌 되는지는 알려지지 않다만..."
+        },
+        {
+          "talkIndex": 25,
+          "ImageData": "ghost12",
+          "talkData": "저기, 잠시만 둘이서 얘기를 나눠도 될까요?"
+        },
+        {
+          "talkIndex": 26,
+          "ImageData": "Reaper1",
+          "talkData": "그래, 결심이 서면 다시 나에게 말을 걸도록 하게."
+        }
+      ]
+    },
+    {
+      "ID": 52,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost12",
+          "talkData": "있잖아, 넌 어떻게 할 생각이야?"
+        }
+      ]
+    },
+    {
+      "ID": 53,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "1. 너랑 같이 갈 생각이야."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "2. 여기에 남아있을래."
+        }
+      ]
+    },
+    {
+      "ID": 54,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost4",
+          "talkData": "...어?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player6",
+          "talkData": "경계에 남겨지면 어떻게 될지 모른다고 하니깐..."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player5",
+          "talkData": "혼자 남겨지는 것 보다는 너랑 같이 가는 게 더 낫지 않을까?"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost10",
+          "talkData": "그렇기는 하지만...\n나랑 같이 간다면 어떻게든 살아날 가능성도 없어지는 거잖아."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "ghost3",
+          "talkData": "진짜 괜찮겠어? 저승문을 지나면 진짜 저승에 가는 거야."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "player4",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "ghost12",
+          "talkData": "나는 솔직히 너가 여기에 남았으면 좋겠어."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "ghost10",
+          "talkData": "무책임한 말이기는 하지만 혹시라도 너가 죽은 게 아니라면"
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "ghost12",
+          "talkData": "그렇다면, 내가 저승에 가서 경계가 없어지고"
+        },
+        {
+          "talkIndex": 9,
+          "ImageData": "ghost13",
+          "talkData": "너도 이 공간에서 현실로 자연스럽게 나갈 수 있게 되는 게 아닐까?"
+        },
+        {
+          "talkIndex": 10,
+          "ImageData": "player16",
+          "talkData": "음..."
+        },
+        {
+          "talkIndex": 11,
+          "ImageData": "ghost4",
+          "talkData": "여기 오면서 너가 그런 말도 했잖아?"
+        },
+        {
+          "talkIndex": 12,
+          "ImageData": "ghost12",
+          "talkData": "\"이제는 되돌아가지 못하는 시절이여서 더 행복하고 좋았던 기억으로 남은 것 같다\""
+        },
+        {
+          "talkIndex": 13,
+          "ImageData": "ghost13",
+          "talkData": "나도 그렇게 너한테 좋았던 추억으로 남고 싶어."
+        },
+        {
+          "talkIndex": 14,
+          "ImageData": "ghost11",
+          "talkData": "너가 살아있었으면 좋겠어."
+        },
+        {
+          "talkIndex": 15,
+          "ImageData": "ghost12",
+          "talkData": "경계가 어떻게 될지 모르겠지만...\n저승문으로 가면 진짜로 너가 죽는거잖아."
+        }
+      ]
+    },
+    {
+      "ID": 55,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "1. 그래도 너랑 같이 갈래"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "2. 알았어, 여기에 남아있을게."
+        }
+      ]
+    },
+    {
+      "ID": 56,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player8",
+          "talkData": "그래도 난 너랑 같이 갈래."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player5",
+          "talkData": "여기 있다가 영영 경계에 갇히게 되면 여기선 아무것도 못하게 되잖아."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player9",
+          "talkData": "어차피 죽는 거랑 다름없는 상황이라면 난 너랑 같이 가는 게 더 좋아."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost3",
+          "talkData": "정 그렇다면 알았어..."
+        }
+      ]
+    },
+    {
+      "ID": 57,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player5",
+          "talkData": "...알았어. 여기 남아있을게."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost11",
+          "talkData": "좋아! 너가 꼭 살아남길 바랄게."
+        }
+      ]
+    },
+    {
+      "ID": 58,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "ghost11",
+          "talkData": "좋아! 너가 꼭 살아남길 바랄게."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "ghost13",
+          "talkData": "기왕이면 너가 어릴 때 같이 놀았던 애들처럼\n나를 그렇게 기억해 줬으면 좋겠어...!"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player10",
+          "talkData": "응. 그럴게.\n너도 조심해서 가."
+        }
+      ]
+    },
+    {
+      "ID": 59,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "Reaper2",
+          "talkData": "이제 정했는가."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player8",
+          "talkData": "네 저희 같이 갈 거에요."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "Reaper2",
+          "talkData": "그럼 가도록 하지."
+        }
+      ]
+    },
+    {
+      "ID": 60,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player16",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player8",
+          "talkData": "나도 가자."
+        }
+      ]
+    },
+    {
+      "ID": 61,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "Reaper2",
+          "talkData": "이제 정했는가."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player5",
+          "talkData": "네 저는 남아있기로 결정했어요."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "Reaper2",
+          "talkData": "그럼 가도록 하지."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "ghost13",
+          "talkData": "꼭 살아남아야 해...! 너를 다시 만나서 즐거웠어."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player13",
+          "talkData": "응. 너도 조심히 가."
+        }
+      ]
+    },
+    {
+      "ID": 62,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player1",
+          "talkData": "어? 누구야...?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "",
+          "talkData": "쨘!\n나 너랑 같이 여행 다니던 그 귀신이야!"
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "",
+          "talkData": "이젠 사람모습으로 바뀌었다구!"
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "player9",
+          "talkData": "너 혹시...\n아까 단체사진에서 봤던, 그..."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "",
+          "talkData": "맞아!"
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "player10",
+          "talkData": "오랜만이다! 너 진짜 6학년때 모습 그대로네?"
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "",
+          "talkData": "응! 졸업하자마자 죽었거든."
+        }
+      ]
+    },
+    {
+      "ID": 63,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "player6",
+          "talkData": "진짜 여기에 갇힌 건가?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "...아! 정신이 드니?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "player16",
+          "talkData": "응? 내 이름이 들린거 같았는데?"
+        }
+      ]
+    },
+    {
+      "ID": 64,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "정신이 드니?"
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "player1",
+          "talkData": "엄마?"
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "",
+          "talkData": "하이고. 신이 살리셨네. 감사합니다. 감사합니다..."
+        }
+      ]
+    },
+    {
+      "ID": 65,
+      "Chat": [
+        {
+          "talkIndex": 0,
+          "ImageData": "",
+          "talkData": "..."
+        },
+        {
+          "talkIndex": 1,
+          "ImageData": "",
+          "talkData": "정신이 든 곳은 구급차 안이였다."
+        },
+        {
+          "talkIndex": 2,
+          "ImageData": "",
+          "talkData": "병원에 도착하고 안정이 된 후에\n나한테 무슨 일이 있었는지 들을 수 있었다."
+        },
+        {
+          "talkIndex": 3,
+          "ImageData": "",
+          "talkData": "나는 자취를 하다 오랜만에 부모님 집에 들르는 길에 교통사고를 당했다."
+        },
+        {
+          "talkIndex": 4,
+          "ImageData": "",
+          "talkData": "그곳은 10여 년 전에도 교통사고로 사망자가 나온 적 있는 곳이라 한다."
+        },
+        {
+          "talkIndex": 5,
+          "ImageData": "",
+          "talkData": "지 경계에서 만난 귀신이 생각나,\n혹시 내가 아는 애가 사고를 당했는지 여쭤봤다."
+        },
+        {
+          "talkIndex": 6,
+          "ImageData": "",
+          "talkData": "그 애는 내가 5학년 때 같은 반에 전학 왔던 친구라고 하셨다."
+        },
+        {
+          "talkIndex": 7,
+          "ImageData": "",
+          "talkData": "교통사고는 우리가족이 이사 간 후의 일이었기 때문에\n내가 충격 받을까봐 그 사실을 얘기해 주지 않으셨다고 하셨다."
+        },
+        {
+          "talkIndex": 8,
+          "ImageData": "",
+          "talkData": "그리고 2주 후, 난 병원에서 퇴원했다."
+        }
+      ]
     }
   ]
 }
+
