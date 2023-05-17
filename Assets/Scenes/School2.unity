@@ -4009,6 +4009,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386845817}
   m_CullTransparentMesh: 1
+--- !u!1 &408589542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408589543}
+  - component: {fileID: 408589544}
+  m_Layer: 0
+  m_Name: TalkingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408589543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408589542}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 76.75453, y: 108.6851, z: -26.298712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1112679769}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408589544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408589542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13ed3faf4b4e4d4abc39241380ee28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 21300000, guid: 2a64bd93fe2d8ca4a94509e028daf08f, type: 3}
+  player2: {fileID: 21300000, guid: 487474edb4adacf4a85bea6802ec9755, type: 3}
+  player3: {fileID: 21300000, guid: 7770d32bd5b27c845a5631b01dbc0054, type: 3}
+  player4: {fileID: 21300000, guid: 6b88ae2f3e7ae0e44860d3add53261f1, type: 3}
+  player5: {fileID: 21300000, guid: 2f7c50bcf8177034ba313cf83ff2e236, type: 3}
+  player6: {fileID: 21300000, guid: f9e2a0bc8d4a5b34fa4ca7c66fa41997, type: 3}
+  player7: {fileID: 21300000, guid: f801c42471fbc714b85b94556f3d772c, type: 3}
+  player8: {fileID: 21300000, guid: 1522bf35e0fc0564c916f1af35d1b75e, type: 3}
+  player9: {fileID: 21300000, guid: b3a87e27d41b9084baf12cb47b1f1fb1, type: 3}
+  player10: {fileID: 21300000, guid: fa09699c647c0564dac9894237a8776d, type: 3}
+  player11: {fileID: 21300000, guid: 0dbc9e8a6cf830a4c94f00aaf487b7c3, type: 3}
+  player12: {fileID: 21300000, guid: 1df230def624a6f46ae5be26f2f39647, type: 3}
+  player13: {fileID: 21300000, guid: c331e838e59e821418c651bc35dc1cf8, type: 3}
+  player14: {fileID: 21300000, guid: 09a8d617722071b4e836e71e4f790344, type: 3}
+  player15: {fileID: 21300000, guid: 03074bd97da3962499162dfad814bec0, type: 3}
+  player16: {fileID: 21300000, guid: 430a903c9f68e2b4786fb8e1185e7193, type: 3}
+  ghost1: {fileID: 21300000, guid: 21b4abc126f6c9642b36db950e067154, type: 3}
+  ghost2: {fileID: 21300000, guid: 3178d44cd14349144950b5fd9625fb8b, type: 3}
+  ghost3: {fileID: 21300000, guid: 293c30c7b60c6dc48b6d77770da62fdc, type: 3}
+  ghost4: {fileID: 21300000, guid: fcb08fd8ab9e7f441869342897da07f0, type: 3}
+  ghost5: {fileID: 21300000, guid: 4fd09281a51dc7f4ca087d64d612282d, type: 3}
+  ghost6: {fileID: 21300000, guid: ee9f4d542e6970d4bbec0dbcf6dbe850, type: 3}
+  ghost7: {fileID: 21300000, guid: 33f17331f53a2ac48b8a40b02bf79b6c, type: 3}
+  ghost8: {fileID: 21300000, guid: 92e4238e04e4cf241ba98ed1e22209ba, type: 3}
+  ghost9: {fileID: 21300000, guid: 70c00c339900be4468e99331691a9e6e, type: 3}
+  ghost10: {fileID: 21300000, guid: ed5c217cb7daa5f4daa677f8dc17df62, type: 3}
+  ghost11: {fileID: 21300000, guid: 859c1ddf861573842ad6d212c83c83f6, type: 3}
+  ghost12: {fileID: 21300000, guid: 7f491cae112d521489e8787a2df6e241, type: 3}
+  ghost13: {fileID: 21300000, guid: 942ba18238e3c2d448731ec5ee3ceed4, type: 3}
+  ghost14: {fileID: 21300000, guid: 37db23c562043b94f81b51568adf4451, type: 3}
+  ghost15: {fileID: 21300000, guid: 7087a9a9499263141a4e04f3802bf8af, type: 3}
+  ribbon1: {fileID: 21300000, guid: ae155f6264fc6c9489cc0a73d3ea5e4a, type: 3}
+  ribbon2: {fileID: 21300000, guid: 5ed9bfdb10a4fff4b86fe4067e7ebc53, type: 3}
+  ribbon3: {fileID: 21300000, guid: 5ad47de681cd8d646babb9c96a1c155a, type: 3}
+  ribbon4: {fileID: 21300000, guid: 4a38abd6639513d489e0696976793293, type: 3}
+  ribbon5: {fileID: 21300000, guid: 25d6d71989f31cf4c8d89700f5430fef, type: 3}
+  cap1: {fileID: 21300000, guid: 63fb4ef371a1df34d9bce1bbde867a62, type: 3}
+  cap2: {fileID: 21300000, guid: 29f08b32689dcf84689f2035cfabde0b, type: 3}
+  cap3: {fileID: 21300000, guid: ed67f7d3878849b49af12b5767330467, type: 3}
+  cap4: {fileID: 21300000, guid: 3c3baecd10c4da147b10c09ef5a92bf8, type: 3}
+  cap5: {fileID: 21300000, guid: eafa0822626c91643afdb13b1542bdeb, type: 3}
+  cap6: {fileID: 21300000, guid: e94cb79f49b39fe488abf7650997d040, type: 3}
+  cap7: {fileID: 21300000, guid: 02ad2fe91c493b141a8aad3a2859ce24, type: 3}
+  cap8: {fileID: 21300000, guid: f3117f0a3fb82394b96f4e6b21a9c57f, type: 3}
+  glass1: {fileID: 21300000, guid: 88c413ed67bfb5243844e97547ecfc94, type: 3}
+  glass2: {fileID: 21300000, guid: b7419ee7a72a9d74a99c680be404c7ef, type: 3}
+  glass3: {fileID: 21300000, guid: 61142eb2ba4806b4b92401f8a209d0ce, type: 3}
+  glass4: {fileID: 21300000, guid: ffbff45298abd3d49b39f3f0d9d10e12, type: 3}
+  glass5: {fileID: 21300000, guid: 6bfb429ff53668e4e9073e5d043c49a8, type: 3}
+  glass6: {fileID: 21300000, guid: 9cb7a9360edd54240b2412d7ec24e33c, type: 3}
+  glass7: {fileID: 21300000, guid: cf1766388ea63184d803be14ee22be83, type: 3}
+  Reaper1: {fileID: 21300000, guid: 429c07097c2c7914b926451f15f21313, type: 3}
+  Reaper2: {fileID: 21300000, guid: 2f323ca03fdf24643a9c98ccb527d068, type: 3}
 --- !u!1 &413094516
 GameObject:
   m_ObjectHideFlags: 0
@@ -5463,7 +5559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Emanager: {fileID: 1993723550}
-  Tmanager: {fileID: 1168679555}
+  Tmanager: {fileID: 0}
   force: 2
 --- !u!50 &656418439
 Rigidbody2D:
@@ -7658,7 +7754,7 @@ Transform:
   m_Children:
   - {fileID: 66720349}
   - {fileID: 1993723549}
-  - {fileID: 1168679556}
+  - {fileID: 408589543}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7743,49 +7839,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1168679554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1168679556}
-  - component: {fileID: 1168679555}
-  m_Layer: 0
-  m_Name: TalkingManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1168679555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168679554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13ed3faf4b4e4d4abc39241380ee28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1168679556
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168679554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.75453, y: 108.6851, z: -26.298712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1112679769}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197522794
 GameObject:
@@ -12211,59 +12264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f24e4e9536f847aa6c0b3a892c273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 21300000, guid: 2a64bd93fe2d8ca4a94509e028daf08f, type: 3}
-  player2: {fileID: 21300000, guid: 487474edb4adacf4a85bea6802ec9755, type: 3}
-  player3: {fileID: 21300000, guid: 7770d32bd5b27c845a5631b01dbc0054, type: 3}
-  player4: {fileID: 21300000, guid: 6b88ae2f3e7ae0e44860d3add53261f1, type: 3}
-  player5: {fileID: 21300000, guid: 2f7c50bcf8177034ba313cf83ff2e236, type: 3}
-  player6: {fileID: 21300000, guid: f9e2a0bc8d4a5b34fa4ca7c66fa41997, type: 3}
-  player7: {fileID: 21300000, guid: f801c42471fbc714b85b94556f3d772c, type: 3}
-  player8: {fileID: 21300000, guid: 1522bf35e0fc0564c916f1af35d1b75e, type: 3}
-  player9: {fileID: 21300000, guid: b3a87e27d41b9084baf12cb47b1f1fb1, type: 3}
-  player10: {fileID: 21300000, guid: fa09699c647c0564dac9894237a8776d, type: 3}
-  player11: {fileID: 21300000, guid: 0dbc9e8a6cf830a4c94f00aaf487b7c3, type: 3}
-  player12: {fileID: 21300000, guid: 1df230def624a6f46ae5be26f2f39647, type: 3}
-  player13: {fileID: 21300000, guid: c331e838e59e821418c651bc35dc1cf8, type: 3}
-  player14: {fileID: 21300000, guid: 09a8d617722071b4e836e71e4f790344, type: 3}
-  player15: {fileID: 21300000, guid: 03074bd97da3962499162dfad814bec0, type: 3}
-  player16: {fileID: 21300000, guid: 430a903c9f68e2b4786fb8e1185e7193, type: 3}
-  ghost1: {fileID: 21300000, guid: 21b4abc126f6c9642b36db950e067154, type: 3}
-  ghost2: {fileID: 21300000, guid: 3178d44cd14349144950b5fd9625fb8b, type: 3}
-  ghost3: {fileID: 21300000, guid: 293c30c7b60c6dc48b6d77770da62fdc, type: 3}
-  ghost4: {fileID: 21300000, guid: fcb08fd8ab9e7f441869342897da07f0, type: 3}
-  ghost5: {fileID: 21300000, guid: 4fd09281a51dc7f4ca087d64d612282d, type: 3}
-  ghost6: {fileID: 21300000, guid: ee9f4d542e6970d4bbec0dbcf6dbe850, type: 3}
-  ghost7: {fileID: 21300000, guid: 33f17331f53a2ac48b8a40b02bf79b6c, type: 3}
-  ghost8: {fileID: 21300000, guid: 92e4238e04e4cf241ba98ed1e22209ba, type: 3}
-  ghost9: {fileID: 21300000, guid: 70c00c339900be4468e99331691a9e6e, type: 3}
-  ghost10: {fileID: 21300000, guid: ed5c217cb7daa5f4daa677f8dc17df62, type: 3}
-  ghost11: {fileID: 21300000, guid: 859c1ddf861573842ad6d212c83c83f6, type: 3}
-  ghost12: {fileID: 21300000, guid: 7f491cae112d521489e8787a2df6e241, type: 3}
-  ghost13: {fileID: 21300000, guid: 942ba18238e3c2d448731ec5ee3ceed4, type: 3}
-  ghost14: {fileID: 21300000, guid: 37db23c562043b94f81b51568adf4451, type: 3}
-  ghost15: {fileID: 21300000, guid: 7087a9a9499263141a4e04f3802bf8af, type: 3}
-  ribbon1: {fileID: 21300000, guid: ae155f6264fc6c9489cc0a73d3ea5e4a, type: 3}
-  ribbon2: {fileID: 21300000, guid: 5ed9bfdb10a4fff4b86fe4067e7ebc53, type: 3}
-  ribbon3: {fileID: 21300000, guid: 5ad47de681cd8d646babb9c96a1c155a, type: 3}
-  ribbon4: {fileID: 0}
-  ribbon5: {fileID: 0}
-  cap1: {fileID: 21300000, guid: 63fb4ef371a1df34d9bce1bbde867a62, type: 3}
-  cap2: {fileID: 21300000, guid: 29f08b32689dcf84689f2035cfabde0b, type: 3}
-  cap3: {fileID: 21300000, guid: ed67f7d3878849b49af12b5767330467, type: 3}
-  cap4: {fileID: 21300000, guid: 3c3baecd10c4da147b10c09ef5a92bf8, type: 3}
-  cap5: {fileID: 21300000, guid: eafa0822626c91643afdb13b1542bdeb, type: 3}
-  cap6: {fileID: 21300000, guid: e94cb79f49b39fe488abf7650997d040, type: 3}
-  cap7: {fileID: 21300000, guid: 02ad2fe91c493b141a8aad3a2859ce24, type: 3}
-  cap8: {fileID: 21300000, guid: f3117f0a3fb82394b96f4e6b21a9c57f, type: 3}
-  glass1: {fileID: 21300000, guid: 88c413ed67bfb5243844e97547ecfc94, type: 3}
-  glass2: {fileID: 21300000, guid: b7419ee7a72a9d74a99c680be404c7ef, type: 3}
-  glass3: {fileID: 21300000, guid: 61142eb2ba4806b4b92401f8a209d0ce, type: 3}
-  glass4: {fileID: 21300000, guid: ffbff45298abd3d49b39f3f0d9d10e12, type: 3}
-  glass5: {fileID: 21300000, guid: 6bfb429ff53668e4e9073e5d043c49a8, type: 3}
-  glass6: {fileID: 21300000, guid: 9cb7a9360edd54240b2412d7ec24e33c, type: 3}
-  glass7: {fileID: 21300000, guid: cf1766388ea63184d803be14ee22be83, type: 3}
-  Reaper1: {fileID: 0}
-  Reaper2: {fileID: 0}
+  scanObject: {fileID: 0}
+  past: {fileID: 176663943}
   roomDoor: {fileID: 21300000, guid: f195683078cb34f4eb8dcda51ae830b1, type: 3}
   coffee: {fileID: 21300000, guid: 878ad9fc8dadbd245b85a6756e666fb2, type: 3}
   memo: {fileID: 21300000, guid: d8557e17d7757434f8c22d76e6ee6e76, type: 3}
@@ -12279,23 +12281,6 @@ MonoBehaviour:
   album1: {fileID: 0}
   album2: {fileID: 0}
   album3: {fileID: 0}
-  Tmanager: {fileID: 1168679555}
-  SM: {fileID: 0}
-  Black: {fileID: 875223114}
-  Ending: {fileID: 0}
-  talkTextUp: {fileID: 356545253}
-  talkTextDown: {fileID: 417297353}
-  talkUIUP: {fileID: 25655390}
-  talkUIDown: {fileID: 966579882}
-  talkImageUp: {fileID: 469947548}
-  talkImageDown: {fileID: 1866148077}
-  select: {fileID: 1575211270}
-  selectBox1: {fileID: 25167885}
-  selectBox2: {fileID: 1958272343}
-  selectText1: {fileID: 0}
-  selectText2: {fileID: 0}
-  past: {fileID: 176663943}
-  scanObject: {fileID: 0}
   player: {fileID: 656418435}
   Ghost: {fileID: 529465308}
   GhostRibbon: {fileID: 0}
@@ -12306,6 +12291,21 @@ MonoBehaviour:
   flower: {fileID: 0}
   flowerSmile: {fileID: 0}
   flowerSad: {fileID: 0}
+  Tmanager: {fileID: 408589544}
+  talkUIUP: {fileID: 25655390}
+  talkUIDown: {fileID: 966579882}
+  talkTextUp: {fileID: 356545253}
+  talkTextDown: {fileID: 417297353}
+  talkImageUp: {fileID: 469947548}
+  talkImageDown: {fileID: 1866148077}
+  select: {fileID: 1575211270}
+  selectBox1: {fileID: 25167885}
+  selectBox2: {fileID: 1958272343}
+  selectText1: {fileID: 0}
+  selectText2: {fileID: 0}
+  SM: {fileID: 0}
+  Black: {fileID: 875223114}
+  Ending: {fileID: 0}
 --- !u!1 &2033647788
 GameObject:
   m_ObjectHideFlags: 0
