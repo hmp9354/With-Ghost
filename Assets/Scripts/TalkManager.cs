@@ -67,9 +67,6 @@ public class TalkManager : MonoBehaviour
     public Sprite Reaper1;
     public Sprite Reaper2;
 
-    /* 딕셔너리는 삭제하기 */
-    Dictionary<int, string[]> talkData;
-
     /* 대사 다이얼로그 저장 JSON파일 */
     JObject jObject;
 

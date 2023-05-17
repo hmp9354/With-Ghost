@@ -341,7 +341,7 @@ public class EventManager : MonoBehaviour
     }
 
     void Talk(int id)
-    {
+    {        
         string talkData = Tmanager.GetTalk(id, SaveMemory.talkIndex);
         Sprite ImageData = Tmanager.GetImage(id, SaveMemory.talkIndex);
 
@@ -387,7 +387,7 @@ public class EventManager : MonoBehaviour
                 GhostFace.SetActive(true);
                 SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
-                Talk(2);
+                Talk(3);
                 SaveMemory.Id++;
             }
             else if (id == 3)                     // ±ÕΩ≈¿Ã πŸ¿ßø°º≠ ≥™ø»
@@ -396,7 +396,7 @@ public class EventManager : MonoBehaviour
                 GhostFace.SetActive(false);
                 SaveMemory.talking = true;
                 SaveMemory.talkIndex = 0;
-                Talk(3);
+                Talk(4);
                 SaveMemory.Id++;
             }
             else if (id == 4)                        // ±ÕΩ≈¿Ã ¡¯¬• πÆ¿ª æÀ∑¡¡‹
