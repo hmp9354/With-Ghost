@@ -359,10 +359,7 @@ public class EventManager : MonoBehaviour
             talkImage = talkImageDown;
         }
 
-        talkUI.SetActive(true);
-
-        Debug.Log("Tal함수 실행, Talk의 id"+id);
-        Debug.Log("Tal함수 실행, Talk의 indx" + SaveMemory.talkIndex);
+        talkUI.SetActive(true);        
 
         /* 대화 종료 후 이벤트 발생 */
         if (talkData == null)
@@ -446,7 +443,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 22)
             {
-                speed = 0.1f;
+                speed = 0.02f;
                 moveObject = GhostRibbon;
                 moveGhostDown = true;
                 y = -1.3f;
@@ -454,7 +451,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 23)
             {
-                speed = 0.1f;
+                speed = 0.02f;
                 moveObject = GhostRibbon;
                 moveGhostDown = true;
                 moveGhostRight = true;
@@ -511,7 +508,7 @@ public class EventManager : MonoBehaviour
                 SaveMemory.Id = 40;
                 SaveMemory.talkIndex = 0;
                 SaveMemory.talking = true;
-                Talk(SaveMemory.Id);
+                Talk(SaveMemory.Id);                
                 //SaveMemory.MiniGame = true;
             }
             else if (SaveMemory.Id == 38)
@@ -846,11 +843,10 @@ public class EventManager : MonoBehaviour
             if (moveObject.transform.position.y <= y)
             {
                 if (SaveMemory.Id == 36)
-                {                    
-                    SaveMemory.talkIndex = 0;
+                {                                        
                     SaveMemory.talking = true;
                     Talk(SaveMemory.Id);
-                    SaveMemory.talkIndex++;
+                    SaveMemory.talkIndex = 0;
                     SaveMemory.Id = 37;
                 }
                 if (SaveMemory.Id == 52)
