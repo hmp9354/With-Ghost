@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraManager
     - EventManager
-    - LoadDialog
     - MiniGame
     - Player
     - SaveMemory
@@ -90,7 +89,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,7 +168,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5340}
+      Script: {instanceID: 17424}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -246,7 +245,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -325,7 +324,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -402,7 +401,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -481,7 +480,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -558,7 +557,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -635,7 +634,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -712,7 +711,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1244,12 +1243,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadDialog
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d

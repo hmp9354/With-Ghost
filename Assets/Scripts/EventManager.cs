@@ -56,12 +56,7 @@ public class EventManager : MonoBehaviour
     // 이동해야 하는 좌표 및 이동 속도
     float y;
     float x;
-    float speed;
-
-
-    /* 대화창 */
-    Sprite ImageData;
-    JObject jObject;
+    int speed = 4;
 
     public TalkManager Tmanager;
 
@@ -127,7 +122,7 @@ public class EventManager : MonoBehaviour
                 if (SaveMemory.roomDoor == 0)
                 {
                     SaveMemory.Id = 8;
-                    SaveMemory.roomDoor = 1;
+                    SaveMemory.roomDoor = -1;
                 }
                 else if (SaveMemory.roomDoor == 1)
                 {
@@ -413,20 +408,18 @@ public class EventManager : MonoBehaviour
             }
             // 귀신이 방을 나감
             else if (id == 7)
-            {
-                speed = 0.02f;
+            {                
                 y = 0.8f;
                 moveObject = Ghost;
                 moveGhostUp = true;
             }
             else if (id == 8)                // 주인공이 문을 열지 못해서 귀신이 문 여는 것을 시도함.
-            {
-                speed = 0.02f;
-                moveObject = Ghost;
+            {                
+                moveObject = Ghost;                
+                x = -2.3f;                
+                y = 0f;
                 moveGhostRight = true;
-                x = -2.3f;
                 moveGhostDown = true;
-                y = 0;
             }
             else if (id == 9)                // 귀신이 문고리에 빙의
             {
@@ -442,16 +435,14 @@ public class EventManager : MonoBehaviour
                 SceneManager.LoadScene("School1");
             }
             else if (SaveMemory.Id == 22)
-            {
-                speed = 0.02f;
+            {                
                 moveObject = GhostRibbon;
                 moveGhostDown = true;
                 y = -1.3f;
                 ribbon = true;
             }
             else if (SaveMemory.Id == 23)
-            {
-                speed = 0.02f;
+            {                
                 moveObject = GhostRibbon;
                 moveGhostDown = true;
                 moveGhostRight = true;
@@ -493,8 +484,7 @@ public class EventManager : MonoBehaviour
                 showImage();
             }
             else if (SaveMemory.Id == 30 && SaveMemory.findEraserUp)
-            {
-                speed = 0.02f;
+            {               
                 x = 0.05f;
                 SaveMemory.talking = true;
                 SaveMemory.Id = 31;
@@ -525,8 +515,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 43)                           // 3층 귀신과 함께 3층에 올라옴
             {
-                moveObject = GhostGlasses;
-                speed = 0.02f;
+                moveObject = GhostGlasses;                
                 x = -7f;
                 moveGhostLeft = true;
             }
@@ -538,8 +527,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 46)                           
             {
-                moveObject = Ghost;
-                speed = 0.02f;
+                moveObject = Ghost;                
                 x = -5.7f;
                 y = -3.4f;
                 moveGhostLeft = true;
@@ -547,8 +535,7 @@ public class EventManager : MonoBehaviour
             }
             else if (SaveMemory.Id == 47)                           // 귀신이 꽃에 빙의
             {
-                moveObject = Ghost;
-                speed = 0.02f;
+                moveObject = Ghost;                
                 x = -2.11f;
                 y = 0.06f;
                 moveGhostUp = true;
@@ -701,13 +688,7 @@ public class EventManager : MonoBehaviour
     }
 
     void Awake()
-    {
-        /* JSON파일 읽어오기*/
-        var jsonTextFile = Resources.Load<TextAsset>("Dialog_WithGhost");        
-        string data = jsonTextFile.ToString();
-
-        jObject = JObject.Parse(data);
-
+    {        
         /* 이벤트 분기에 따라 스토리 진행 */        
         if (SaveMemory.trueEnding)
         {
@@ -736,8 +717,7 @@ public class EventManager : MonoBehaviour
             //SaveMemory.Id = 32;     // 나중에 바꿔야 하는 값
             if (SaveMemory.findPicture)
             {
-                Reaper.SetActive(true);
-                speed = 0.02f;
+                Reaper.SetActive(true);                
                 y = 0f;
                 moveObject = Reaper;
                 moveGhostDown = true;
@@ -808,10 +788,10 @@ public class EventManager : MonoBehaviour
         /* NPC이동 */
         if (moveGhostUp)
         {
-            moveObject.transform.Translate(0, speed, 0);
+            moveObject.transform.Translate(0, speed * Time.deltaTime, 0);
             if (moveObject2 != null)
             {
-                moveObject2.transform.Translate(0, speed, 0);
+                moveObject2.transform.Translate(0, speed * Time.deltaTime, 0);
             }
 
             if (moveObject.transform.position.y >= y)
@@ -835,10 +815,10 @@ public class EventManager : MonoBehaviour
         }
         if (moveGhostDown)
         {
-            moveObject.transform.Translate(0, -speed, 0);
+            moveObject.transform.Translate(0, -speed * Time.deltaTime, 0);
             if (moveObject2 != null)
             {
-                moveObject2.transform.Translate(0, -speed, 0);
+                moveObject2.transform.Translate(0, -speed * Time.deltaTime, 0);
             }
             if (moveObject.transform.position.y <= y)
             {
@@ -861,10 +841,10 @@ public class EventManager : MonoBehaviour
         }
         if (moveGhostRight)
         {
-            moveObject.transform.Translate(speed, 0, 0);
+            moveObject.transform.Translate(speed * Time.deltaTime, 0, 0);
             if (SaveMemory.Id != 60 && SaveMemory.Id != 62 && moveObject2 != null)
             {
-                moveObject2.transform.Translate(speed, 0, 0);
+                moveObject2.transform.Translate(speed * Time.deltaTime, 0, 0);
             }
             if (moveObject.transform.position.x >= x)
             {
@@ -884,10 +864,10 @@ public class EventManager : MonoBehaviour
         }
         if (moveGhostLeft)
         {
-            moveObject.transform.Translate(-speed, 0, 0);
+            moveObject.transform.Translate(-speed * Time.deltaTime, 0, 0);
             if (moveObject2 != null)
             {
-                moveObject2.transform.Translate(-speed, 0, 0);
+                moveObject2.transform.Translate(-speed * Time.deltaTime, 0, 0);
             }
             if (moveObject.transform.position.x <= x)
             {
@@ -896,8 +876,9 @@ public class EventManager : MonoBehaviour
         }
 
         /* 이벤트 발생에 따른 스토리 진행 */
-        if (SaveMemory.roomDoor == 1 && Ghost.transform.position == new Vector3(-2.3f, 0, 0))
+        if (SaveMemory.roomDoor == -1 && Ghost.transform.position.x >= -2.3f && Ghost.transform.position.y <= 0f)
         {
+            SaveMemory.roomDoor = 1;
             SaveMemory.Id = 9;
             SaveMemory.talkIndex = 0;
             Talk(SaveMemory.Id);
@@ -919,8 +900,7 @@ public class EventManager : MonoBehaviour
             Talk(SaveMemory.Id);
             SaveMemory.talkIndex++;
 
-            y = -1.2f;
-            speed = 0.02f;
+            y = -1.2f;            
             moveObject = GhostCap;
             moveObject2 = GhostGlasses;
 

@@ -62,7 +62,6 @@
     <Compile Include="Assets\Scripts\SaveMemory.cs" />
     <Compile Include="Assets\Scripts\MiniGame.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\LoadDialog.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
   </ItemGroup>
   <ItemGroup>
