@@ -73,8 +73,8 @@ public class TalkManager : MonoBehaviour
     void Awake()
     {
         /* JSON파일 읽어오기*/
-        string filePath = Application.dataPath + "/DialogData/Dialog_WithGhost.json";
-        string data = System.IO.File.ReadAllText(filePath);
+        var jsonTextFile = Resources.Load<TextAsset>("Dialog_WithGhost");        
+        string data = jsonTextFile.ToString();        
 
         jObject = JObject.Parse(data);
     }    
