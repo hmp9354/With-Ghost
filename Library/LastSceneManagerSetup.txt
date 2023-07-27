@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Border.unity
+- path: Assets/Scenes/SchoolRoop.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

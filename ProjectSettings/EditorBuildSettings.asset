@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Border.unity
     guid: 7c360895b3bcdce48be21e172c9efa4e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/House.unity
     guid: 63ab8ccbf69ad18428ca9121d5f73b6b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/School1.unity
     guid: a0b984f55f4696a4593b70c51102a4a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/School2.unity
     guid: a4bb3f183f835994b8fda5342ba08fb1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/School3.unity
     guid: d4d611e81997d0143b61f507f30c2c43
   - enabled: 1

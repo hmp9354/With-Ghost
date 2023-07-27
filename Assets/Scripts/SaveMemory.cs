@@ -9,15 +9,15 @@ public class SaveMemory : MonoBehaviour
     static public int talkIndex = 0;   
 
     /* 스토리 진행 및 엔딩 분기 */
-    static public bool gameStart = false;
-    static public bool metGhost = false;
-    static public bool enterHouse = false;
-    static public bool enterSchool1 = false;
-    static public bool RibbonGB = false;
-    static public bool enterSchool2 = false;
-    static public bool metTrouble = false;
-    static public bool enterSchool3 = false;
-    static public bool schoolRoop = false;
+    static public bool gameStart = true;
+    static public bool metGhost = true;
+    static public bool enterHouse = true;
+    static public bool enterSchool1 = true;
+    static public bool RibbonGB = true;
+    static public bool enterSchool2 = true;
+    static public bool metTrouble = true;
+    static public bool enterSchool3 = true;
+    static public bool schoolRoop = true;
     static public bool badEnding = false;
     static public bool halfHappy = false;
     static public bool trueEnding = false;
@@ -34,7 +34,7 @@ public class SaveMemory : MonoBehaviour
     static public bool findEraserDown = false;
     static public bool dontGo3 = false;
     static public bool findBook = false;
-    static public bool findPicture = false;
+    static public bool findPicture = true;
     
     /* 게임 진행 상황 */
     static public bool talking = true;
