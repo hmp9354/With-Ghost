@@ -59,7 +59,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
-    <Compile Include="Assets\Scripts\SaveMemory.cs" />
+    <Compile Include="..\..\..\Users\phm02\OneDrive\바탕 화면\SaveMemory.cs">
+      <Link>Assets\Scripts\SaveMemory.cs</Link>
+    </Compile>
     <Compile Include="Assets\Scripts\TalkManager.cs" />
     <Compile Include="Assets\Scripts\MiniGame.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
